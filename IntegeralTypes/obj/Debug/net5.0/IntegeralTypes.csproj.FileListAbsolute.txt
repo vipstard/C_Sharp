@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\IntegeralTypes\bin\Debug\net5.0\IntegeralTypes.exe
+D:\GIT\C_Sharp\IntegeralTypes\bin\Debug\net5.0\IntegeralTypes.deps.json
+D:\GIT\C_Sharp\IntegeralTypes\bin\Debug\net5.0\IntegeralTypes.runtimeconfig.json
+D:\GIT\C_Sharp\IntegeralTypes\bin\Debug\net5.0\IntegeralTypes.runtimeconfig.dev.json
+D:\GIT\C_Sharp\IntegeralTypes\bin\Debug\net5.0\IntegeralTypes.dll
+D:\GIT\C_Sharp\IntegeralTypes\bin\Debug\net5.0\ref\IntegeralTypes.dll
+D:\GIT\C_Sharp\IntegeralTypes\bin\Debug\net5.0\IntegeralTypes.pdb
+D:\GIT\C_Sharp\IntegeralTypes\obj\Debug\net5.0\IntegeralTypes.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\IntegeralTypes\obj\Debug\net5.0\IntegeralTypes.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\IntegeralTypes\obj\Debug\net5.0\IntegeralTypes.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\IntegeralTypes\obj\Debug\net5.0\IntegeralTypes.AssemblyInfo.cs
+D:\GIT\C_Sharp\IntegeralTypes\obj\Debug\net5.0\IntegeralTypes.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\IntegeralTypes\obj\Debug\net5.0\IntegeralTypes.dll
+D:\GIT\C_Sharp\IntegeralTypes\obj\Debug\net5.0\ref\IntegeralTypes.dll
+D:\GIT\C_Sharp\IntegeralTypes\obj\Debug\net5.0\IntegeralTypes.pdb
+D:\GIT\C_Sharp\IntegeralTypes\obj\Debug\net5.0\IntegeralTypes.genruntimeconfig.cache

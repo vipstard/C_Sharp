@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\IntegerLiterals\bin\Debug\net5.0\IntegerLiterals.exe
+D:\GIT\C_Sharp\IntegerLiterals\bin\Debug\net5.0\IntegerLiterals.deps.json
+D:\GIT\C_Sharp\IntegerLiterals\bin\Debug\net5.0\IntegerLiterals.runtimeconfig.json
+D:\GIT\C_Sharp\IntegerLiterals\bin\Debug\net5.0\IntegerLiterals.runtimeconfig.dev.json
+D:\GIT\C_Sharp\IntegerLiterals\bin\Debug\net5.0\IntegerLiterals.dll
+D:\GIT\C_Sharp\IntegerLiterals\bin\Debug\net5.0\ref\IntegerLiterals.dll
+D:\GIT\C_Sharp\IntegerLiterals\bin\Debug\net5.0\IntegerLiterals.pdb
+D:\GIT\C_Sharp\IntegerLiterals\obj\Debug\net5.0\IntegerLiterals.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\IntegerLiterals\obj\Debug\net5.0\IntegerLiterals.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\IntegerLiterals\obj\Debug\net5.0\IntegerLiterals.AssemblyInfo.cs
+D:\GIT\C_Sharp\IntegerLiterals\obj\Debug\net5.0\IntegerLiterals.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\IntegerLiterals\obj\Debug\net5.0\IntegerLiterals.dll
+D:\GIT\C_Sharp\IntegerLiterals\obj\Debug\net5.0\ref\IntegerLiterals.dll
+D:\GIT\C_Sharp\IntegerLiterals\obj\Debug\net5.0\IntegerLiterals.pdb
+D:\GIT\C_Sharp\IntegerLiterals\obj\Debug\net5.0\IntegerLiterals.genruntimeconfig.cache
