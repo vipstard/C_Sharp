@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\SwapByRef\bin\Debug\net5.0\SwapByRef.exe
+D:\GIT\C_Sharp\SwapByRef\bin\Debug\net5.0\SwapByRef.deps.json
+D:\GIT\C_Sharp\SwapByRef\bin\Debug\net5.0\SwapByRef.runtimeconfig.json
+D:\GIT\C_Sharp\SwapByRef\bin\Debug\net5.0\SwapByRef.runtimeconfig.dev.json
+D:\GIT\C_Sharp\SwapByRef\bin\Debug\net5.0\SwapByRef.dll
+D:\GIT\C_Sharp\SwapByRef\bin\Debug\net5.0\ref\SwapByRef.dll
+D:\GIT\C_Sharp\SwapByRef\bin\Debug\net5.0\SwapByRef.pdb
+D:\GIT\C_Sharp\SwapByRef\obj\Debug\net5.0\SwapByRef.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\SwapByRef\obj\Debug\net5.0\SwapByRef.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\SwapByRef\obj\Debug\net5.0\SwapByRef.AssemblyInfo.cs
+D:\GIT\C_Sharp\SwapByRef\obj\Debug\net5.0\SwapByRef.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\SwapByRef\obj\Debug\net5.0\SwapByRef.dll
+D:\GIT\C_Sharp\SwapByRef\obj\Debug\net5.0\ref\SwapByRef.dll
+D:\GIT\C_Sharp\SwapByRef\obj\Debug\net5.0\SwapByRef.pdb
+D:\GIT\C_Sharp\SwapByRef\obj\Debug\net5.0\SwapByRef.genruntimeconfig.cache

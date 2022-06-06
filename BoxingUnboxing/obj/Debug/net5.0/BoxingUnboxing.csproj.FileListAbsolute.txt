@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\BoxingUnboxing\bin\Debug\net5.0\BoxingUnboxing.exe
+D:\GIT\C_Sharp\BoxingUnboxing\bin\Debug\net5.0\BoxingUnboxing.deps.json
+D:\GIT\C_Sharp\BoxingUnboxing\bin\Debug\net5.0\BoxingUnboxing.runtimeconfig.json
+D:\GIT\C_Sharp\BoxingUnboxing\bin\Debug\net5.0\BoxingUnboxing.runtimeconfig.dev.json
+D:\GIT\C_Sharp\BoxingUnboxing\bin\Debug\net5.0\BoxingUnboxing.dll
+D:\GIT\C_Sharp\BoxingUnboxing\bin\Debug\net5.0\ref\BoxingUnboxing.dll
+D:\GIT\C_Sharp\BoxingUnboxing\bin\Debug\net5.0\BoxingUnboxing.pdb
+D:\GIT\C_Sharp\BoxingUnboxing\obj\Debug\net5.0\BoxingUnboxing.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\BoxingUnboxing\obj\Debug\net5.0\BoxingUnboxing.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\BoxingUnboxing\obj\Debug\net5.0\BoxingUnboxing.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\BoxingUnboxing\obj\Debug\net5.0\BoxingUnboxing.AssemblyInfo.cs
+D:\GIT\C_Sharp\BoxingUnboxing\obj\Debug\net5.0\BoxingUnboxing.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\BoxingUnboxing\obj\Debug\net5.0\BoxingUnboxing.dll
+D:\GIT\C_Sharp\BoxingUnboxing\obj\Debug\net5.0\ref\BoxingUnboxing.dll
+D:\GIT\C_Sharp\BoxingUnboxing\obj\Debug\net5.0\BoxingUnboxing.pdb
+D:\GIT\C_Sharp\BoxingUnboxing\obj\Debug\net5.0\BoxingUnboxing.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\UsingParams\obj\Debug\net5.0\UsingParams.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\UsingParams\obj\Debug\net5.0\UsingParams.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\UsingParams\obj\Debug\net5.0\UsingParams.AssemblyInfo.cs
+D:\GIT\C_Sharp\UsingParams\obj\Debug\net5.0\UsingParams.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\UsingParams\bin\Debug\net5.0\UsingParams.exe
+D:\GIT\C_Sharp\UsingParams\bin\Debug\net5.0\UsingParams.deps.json
+D:\GIT\C_Sharp\UsingParams\bin\Debug\net5.0\UsingParams.runtimeconfig.json
+D:\GIT\C_Sharp\UsingParams\bin\Debug\net5.0\UsingParams.runtimeconfig.dev.json
+D:\GIT\C_Sharp\UsingParams\bin\Debug\net5.0\UsingParams.dll
+D:\GIT\C_Sharp\UsingParams\bin\Debug\net5.0\ref\UsingParams.dll
+D:\GIT\C_Sharp\UsingParams\bin\Debug\net5.0\UsingParams.pdb
+D:\GIT\C_Sharp\UsingParams\obj\Debug\net5.0\UsingParams.dll
+D:\GIT\C_Sharp\UsingParams\obj\Debug\net5.0\ref\UsingParams.dll
+D:\GIT\C_Sharp\UsingParams\obj\Debug\net5.0\UsingParams.pdb
+D:\GIT\C_Sharp\UsingParams\obj\Debug\net5.0\UsingParams.genruntimeconfig.cache

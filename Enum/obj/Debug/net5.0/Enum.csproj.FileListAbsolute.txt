@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\Enum\bin\Debug\net5.0\Enum.exe
+D:\GIT\C_Sharp\Enum\bin\Debug\net5.0\Enum.deps.json
+D:\GIT\C_Sharp\Enum\bin\Debug\net5.0\Enum.runtimeconfig.json
+D:\GIT\C_Sharp\Enum\bin\Debug\net5.0\Enum.runtimeconfig.dev.json
+D:\GIT\C_Sharp\Enum\bin\Debug\net5.0\Enum.dll
+D:\GIT\C_Sharp\Enum\bin\Debug\net5.0\ref\Enum.dll
+D:\GIT\C_Sharp\Enum\bin\Debug\net5.0\Enum.pdb
+D:\GIT\C_Sharp\Enum\obj\Debug\net5.0\Enum.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\Enum\obj\Debug\net5.0\Enum.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\Enum\obj\Debug\net5.0\Enum.AssemblyInfo.cs
+D:\GIT\C_Sharp\Enum\obj\Debug\net5.0\Enum.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\Enum\obj\Debug\net5.0\Enum.dll
+D:\GIT\C_Sharp\Enum\obj\Debug\net5.0\ref\Enum.dll
+D:\GIT\C_Sharp\Enum\obj\Debug\net5.0\Enum.pdb
+D:\GIT\C_Sharp\Enum\obj\Debug\net5.0\Enum.genruntimeconfig.cache

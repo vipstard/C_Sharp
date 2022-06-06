@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\StringNumberConversion\bin\Debug\net5.0\StringNumberConversion.exe
+D:\GIT\C_Sharp\StringNumberConversion\bin\Debug\net5.0\StringNumberConversion.deps.json
+D:\GIT\C_Sharp\StringNumberConversion\bin\Debug\net5.0\StringNumberConversion.runtimeconfig.json
+D:\GIT\C_Sharp\StringNumberConversion\bin\Debug\net5.0\StringNumberConversion.runtimeconfig.dev.json
+D:\GIT\C_Sharp\StringNumberConversion\bin\Debug\net5.0\StringNumberConversion.dll
+D:\GIT\C_Sharp\StringNumberConversion\bin\Debug\net5.0\ref\StringNumberConversion.dll
+D:\GIT\C_Sharp\StringNumberConversion\bin\Debug\net5.0\StringNumberConversion.pdb
+D:\GIT\C_Sharp\StringNumberConversion\obj\Debug\net5.0\StringNumberConversion.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\StringNumberConversion\obj\Debug\net5.0\StringNumberConversion.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\StringNumberConversion\obj\Debug\net5.0\StringNumberConversion.AssemblyInfo.cs
+D:\GIT\C_Sharp\StringNumberConversion\obj\Debug\net5.0\StringNumberConversion.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\StringNumberConversion\obj\Debug\net5.0\StringNumberConversion.dll
+D:\GIT\C_Sharp\StringNumberConversion\obj\Debug\net5.0\ref\StringNumberConversion.dll
+D:\GIT\C_Sharp\StringNumberConversion\obj\Debug\net5.0\StringNumberConversion.pdb
+D:\GIT\C_Sharp\StringNumberConversion\obj\Debug\net5.0\StringNumberConversion.genruntimeconfig.cache

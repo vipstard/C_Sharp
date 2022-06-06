@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\UsingVar\bin\Debug\net5.0\UsingVar.exe
+D:\GIT\C_Sharp\UsingVar\bin\Debug\net5.0\UsingVar.deps.json
+D:\GIT\C_Sharp\UsingVar\bin\Debug\net5.0\UsingVar.runtimeconfig.json
+D:\GIT\C_Sharp\UsingVar\bin\Debug\net5.0\UsingVar.runtimeconfig.dev.json
+D:\GIT\C_Sharp\UsingVar\bin\Debug\net5.0\UsingVar.dll
+D:\GIT\C_Sharp\UsingVar\bin\Debug\net5.0\ref\UsingVar.dll
+D:\GIT\C_Sharp\UsingVar\bin\Debug\net5.0\UsingVar.pdb
+D:\GIT\C_Sharp\UsingVar\obj\Debug\net5.0\UsingVar.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\UsingVar\obj\Debug\net5.0\UsingVar.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\UsingVar\obj\Debug\net5.0\UsingVar.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\UsingVar\obj\Debug\net5.0\UsingVar.AssemblyInfo.cs
+D:\GIT\C_Sharp\UsingVar\obj\Debug\net5.0\UsingVar.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\UsingVar\obj\Debug\net5.0\UsingVar.dll
+D:\GIT\C_Sharp\UsingVar\obj\Debug\net5.0\ref\UsingVar.dll
+D:\GIT\C_Sharp\UsingVar\obj\Debug\net5.0\UsingVar.pdb
+D:\GIT\C_Sharp\UsingVar\obj\Debug\net5.0\UsingVar.genruntimeconfig.cache
