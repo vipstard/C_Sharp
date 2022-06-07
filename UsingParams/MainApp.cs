@@ -4,7 +4,8 @@ namespace UsingParams
 {
     class MainApp
     {
-
+       /* 가변 개수의 인수 (params)
+        매개변수 개수가 유연하게 달라질 수 있는 경우에 적합하다.*/
         static int Sum(params int[] args)
         {
             Console.Write("Summing...");

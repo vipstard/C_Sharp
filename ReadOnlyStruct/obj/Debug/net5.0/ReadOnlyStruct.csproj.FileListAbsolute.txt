@@ -1,0 +1,4 @@
+D:\GIT\C_Sharp\ReadOnlyStruct\obj\Debug\net5.0\ReadOnlyStruct.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\ReadOnlyStruct\obj\Debug\net5.0\ReadOnlyStruct.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\ReadOnlyStruct\obj\Debug\net5.0\ReadOnlyStruct.AssemblyInfo.cs
+D:\GIT\C_Sharp\ReadOnlyStruct\obj\Debug\net5.0\ReadOnlyStruct.csproj.CoreCompileInputs.cache

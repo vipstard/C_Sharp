@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\NestedClass\bin\Debug\net5.0\NestedClass.exe
+D:\GIT\C_Sharp\NestedClass\bin\Debug\net5.0\NestedClass.deps.json
+D:\GIT\C_Sharp\NestedClass\bin\Debug\net5.0\NestedClass.runtimeconfig.json
+D:\GIT\C_Sharp\NestedClass\bin\Debug\net5.0\NestedClass.runtimeconfig.dev.json
+D:\GIT\C_Sharp\NestedClass\bin\Debug\net5.0\NestedClass.dll
+D:\GIT\C_Sharp\NestedClass\bin\Debug\net5.0\ref\NestedClass.dll
+D:\GIT\C_Sharp\NestedClass\bin\Debug\net5.0\NestedClass.pdb
+D:\GIT\C_Sharp\NestedClass\obj\Debug\net5.0\NestedClass.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\NestedClass\obj\Debug\net5.0\NestedClass.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\NestedClass\obj\Debug\net5.0\NestedClass.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\NestedClass\obj\Debug\net5.0\NestedClass.AssemblyInfo.cs
+D:\GIT\C_Sharp\NestedClass\obj\Debug\net5.0\NestedClass.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\NestedClass\obj\Debug\net5.0\NestedClass.dll
+D:\GIT\C_Sharp\NestedClass\obj\Debug\net5.0\ref\NestedClass.dll
+D:\GIT\C_Sharp\NestedClass\obj\Debug\net5.0\NestedClass.pdb
+D:\GIT\C_Sharp\NestedClass\obj\Debug\net5.0\NestedClass.genruntimeconfig.cache

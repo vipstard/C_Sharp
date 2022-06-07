@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\MethodHiding\bin\Debug\net5.0\MethodHiding.exe
+D:\GIT\C_Sharp\MethodHiding\bin\Debug\net5.0\MethodHiding.deps.json
+D:\GIT\C_Sharp\MethodHiding\bin\Debug\net5.0\MethodHiding.runtimeconfig.json
+D:\GIT\C_Sharp\MethodHiding\bin\Debug\net5.0\MethodHiding.runtimeconfig.dev.json
+D:\GIT\C_Sharp\MethodHiding\bin\Debug\net5.0\MethodHiding.dll
+D:\GIT\C_Sharp\MethodHiding\bin\Debug\net5.0\ref\MethodHiding.dll
+D:\GIT\C_Sharp\MethodHiding\bin\Debug\net5.0\MethodHiding.pdb
+D:\GIT\C_Sharp\MethodHiding\obj\Debug\net5.0\MethodHiding.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\MethodHiding\obj\Debug\net5.0\MethodHiding.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\MethodHiding\obj\Debug\net5.0\MethodHiding.AssemblyInfo.cs
+D:\GIT\C_Sharp\MethodHiding\obj\Debug\net5.0\MethodHiding.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\MethodHiding\obj\Debug\net5.0\MethodHiding.dll
+D:\GIT\C_Sharp\MethodHiding\obj\Debug\net5.0\ref\MethodHiding.dll
+D:\GIT\C_Sharp\MethodHiding\obj\Debug\net5.0\MethodHiding.pdb
+D:\GIT\C_Sharp\MethodHiding\obj\Debug\net5.0\MethodHiding.genruntimeconfig.cache

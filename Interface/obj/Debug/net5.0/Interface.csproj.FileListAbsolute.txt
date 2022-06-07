@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\Interface\bin\Debug\net5.0\Interface.exe
+D:\GIT\C_Sharp\Interface\bin\Debug\net5.0\Interface.deps.json
+D:\GIT\C_Sharp\Interface\bin\Debug\net5.0\Interface.runtimeconfig.json
+D:\GIT\C_Sharp\Interface\bin\Debug\net5.0\Interface.runtimeconfig.dev.json
+D:\GIT\C_Sharp\Interface\bin\Debug\net5.0\Interface.dll
+D:\GIT\C_Sharp\Interface\bin\Debug\net5.0\ref\Interface.dll
+D:\GIT\C_Sharp\Interface\bin\Debug\net5.0\Interface.pdb
+D:\GIT\C_Sharp\Interface\obj\Debug\net5.0\Interface.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\Interface\obj\Debug\net5.0\Interface.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\Interface\obj\Debug\net5.0\Interface.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\Interface\obj\Debug\net5.0\Interface.AssemblyInfo.cs
+D:\GIT\C_Sharp\Interface\obj\Debug\net5.0\Interface.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\Interface\obj\Debug\net5.0\Interface.dll
+D:\GIT\C_Sharp\Interface\obj\Debug\net5.0\ref\Interface.dll
+D:\GIT\C_Sharp\Interface\obj\Debug\net5.0\Interface.pdb
+D:\GIT\C_Sharp\Interface\obj\Debug\net5.0\Interface.genruntimeconfig.cache

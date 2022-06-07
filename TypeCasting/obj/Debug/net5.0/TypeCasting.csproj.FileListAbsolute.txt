@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\TypeCasting\bin\Debug\net5.0\TypeCasting.exe
+D:\GIT\C_Sharp\TypeCasting\bin\Debug\net5.0\TypeCasting.deps.json
+D:\GIT\C_Sharp\TypeCasting\bin\Debug\net5.0\TypeCasting.runtimeconfig.json
+D:\GIT\C_Sharp\TypeCasting\bin\Debug\net5.0\TypeCasting.runtimeconfig.dev.json
+D:\GIT\C_Sharp\TypeCasting\bin\Debug\net5.0\TypeCasting.dll
+D:\GIT\C_Sharp\TypeCasting\bin\Debug\net5.0\ref\TypeCasting.dll
+D:\GIT\C_Sharp\TypeCasting\bin\Debug\net5.0\TypeCasting.pdb
+D:\GIT\C_Sharp\TypeCasting\obj\Debug\net5.0\TypeCasting.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\TypeCasting\obj\Debug\net5.0\TypeCasting.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\TypeCasting\obj\Debug\net5.0\TypeCasting.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\TypeCasting\obj\Debug\net5.0\TypeCasting.AssemblyInfo.cs
+D:\GIT\C_Sharp\TypeCasting\obj\Debug\net5.0\TypeCasting.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\TypeCasting\obj\Debug\net5.0\TypeCasting.dll
+D:\GIT\C_Sharp\TypeCasting\obj\Debug\net5.0\ref\TypeCasting.dll
+D:\GIT\C_Sharp\TypeCasting\obj\Debug\net5.0\TypeCasting.pdb
+D:\GIT\C_Sharp\TypeCasting\obj\Debug\net5.0\TypeCasting.genruntimeconfig.cache

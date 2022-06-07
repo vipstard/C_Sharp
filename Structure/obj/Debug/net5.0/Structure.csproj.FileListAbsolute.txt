@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\Structure\bin\Debug\net5.0\Structure.exe
+D:\GIT\C_Sharp\Structure\bin\Debug\net5.0\Structure.deps.json
+D:\GIT\C_Sharp\Structure\bin\Debug\net5.0\Structure.runtimeconfig.json
+D:\GIT\C_Sharp\Structure\bin\Debug\net5.0\Structure.runtimeconfig.dev.json
+D:\GIT\C_Sharp\Structure\bin\Debug\net5.0\Structure.dll
+D:\GIT\C_Sharp\Structure\bin\Debug\net5.0\ref\Structure.dll
+D:\GIT\C_Sharp\Structure\bin\Debug\net5.0\Structure.pdb
+D:\GIT\C_Sharp\Structure\obj\Debug\net5.0\Structure.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\Structure\obj\Debug\net5.0\Structure.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\Structure\obj\Debug\net5.0\Structure.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\Structure\obj\Debug\net5.0\Structure.AssemblyInfo.cs
+D:\GIT\C_Sharp\Structure\obj\Debug\net5.0\Structure.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\Structure\obj\Debug\net5.0\Structure.dll
+D:\GIT\C_Sharp\Structure\obj\Debug\net5.0\ref\Structure.dll
+D:\GIT\C_Sharp\Structure\obj\Debug\net5.0\Structure.pdb
+D:\GIT\C_Sharp\Structure\obj\Debug\net5.0\Structure.genruntimeconfig.cache
