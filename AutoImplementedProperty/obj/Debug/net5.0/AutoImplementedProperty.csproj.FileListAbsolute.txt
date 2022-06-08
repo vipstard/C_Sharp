@@ -1,0 +1,15 @@
+C:\Users\vipst\source\repos\AutoImplementedProperty\bin\Debug\net5.0\AutoImplementedProperty.exe
+C:\Users\vipst\source\repos\AutoImplementedProperty\bin\Debug\net5.0\AutoImplementedProperty.deps.json
+C:\Users\vipst\source\repos\AutoImplementedProperty\bin\Debug\net5.0\AutoImplementedProperty.runtimeconfig.json
+C:\Users\vipst\source\repos\AutoImplementedProperty\bin\Debug\net5.0\AutoImplementedProperty.runtimeconfig.dev.json
+C:\Users\vipst\source\repos\AutoImplementedProperty\bin\Debug\net5.0\AutoImplementedProperty.dll
+C:\Users\vipst\source\repos\AutoImplementedProperty\bin\Debug\net5.0\ref\AutoImplementedProperty.dll
+C:\Users\vipst\source\repos\AutoImplementedProperty\bin\Debug\net5.0\AutoImplementedProperty.pdb
+C:\Users\vipst\source\repos\AutoImplementedProperty\obj\Debug\net5.0\AutoImplementedProperty.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vipst\source\repos\AutoImplementedProperty\obj\Debug\net5.0\AutoImplementedProperty.AssemblyInfoInputs.cache
+C:\Users\vipst\source\repos\AutoImplementedProperty\obj\Debug\net5.0\AutoImplementedProperty.AssemblyInfo.cs
+C:\Users\vipst\source\repos\AutoImplementedProperty\obj\Debug\net5.0\AutoImplementedProperty.csproj.CoreCompileInputs.cache
+C:\Users\vipst\source\repos\AutoImplementedProperty\obj\Debug\net5.0\AutoImplementedProperty.dll
+C:\Users\vipst\source\repos\AutoImplementedProperty\obj\Debug\net5.0\ref\AutoImplementedProperty.dll
+C:\Users\vipst\source\repos\AutoImplementedProperty\obj\Debug\net5.0\AutoImplementedProperty.pdb
+C:\Users\vipst\source\repos\AutoImplementedProperty\obj\Debug\net5.0\AutoImplementedProperty.genruntimeconfig.cache

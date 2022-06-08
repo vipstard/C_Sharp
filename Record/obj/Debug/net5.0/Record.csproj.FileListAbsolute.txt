@@ -1,0 +1,15 @@
+C:\Users\vipst\source\repos\Record\bin\Debug\net5.0\Record.exe
+C:\Users\vipst\source\repos\Record\bin\Debug\net5.0\Record.deps.json
+C:\Users\vipst\source\repos\Record\bin\Debug\net5.0\Record.runtimeconfig.json
+C:\Users\vipst\source\repos\Record\bin\Debug\net5.0\Record.runtimeconfig.dev.json
+C:\Users\vipst\source\repos\Record\bin\Debug\net5.0\Record.dll
+C:\Users\vipst\source\repos\Record\bin\Debug\net5.0\ref\Record.dll
+C:\Users\vipst\source\repos\Record\bin\Debug\net5.0\Record.pdb
+C:\Users\vipst\source\repos\Record\obj\Debug\net5.0\Record.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vipst\source\repos\Record\obj\Debug\net5.0\Record.AssemblyInfoInputs.cache
+C:\Users\vipst\source\repos\Record\obj\Debug\net5.0\Record.AssemblyInfo.cs
+C:\Users\vipst\source\repos\Record\obj\Debug\net5.0\Record.csproj.CoreCompileInputs.cache
+C:\Users\vipst\source\repos\Record\obj\Debug\net5.0\Record.dll
+C:\Users\vipst\source\repos\Record\obj\Debug\net5.0\ref\Record.dll
+C:\Users\vipst\source\repos\Record\obj\Debug\net5.0\Record.pdb
+C:\Users\vipst\source\repos\Record\obj\Debug\net5.0\Record.genruntimeconfig.cache

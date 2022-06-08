@@ -1,0 +1,16 @@
+C:\Users\vipst\source\repos\Property\bin\Debug\net5.0\Property.exe
+C:\Users\vipst\source\repos\Property\bin\Debug\net5.0\Property.deps.json
+C:\Users\vipst\source\repos\Property\bin\Debug\net5.0\Property.runtimeconfig.json
+C:\Users\vipst\source\repos\Property\bin\Debug\net5.0\Property.runtimeconfig.dev.json
+C:\Users\vipst\source\repos\Property\bin\Debug\net5.0\Property.dll
+C:\Users\vipst\source\repos\Property\bin\Debug\net5.0\ref\Property.dll
+C:\Users\vipst\source\repos\Property\bin\Debug\net5.0\Property.pdb
+C:\Users\vipst\source\repos\Property\obj\Debug\net5.0\Property.csproj.AssemblyReference.cache
+C:\Users\vipst\source\repos\Property\obj\Debug\net5.0\Property.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vipst\source\repos\Property\obj\Debug\net5.0\Property.AssemblyInfoInputs.cache
+C:\Users\vipst\source\repos\Property\obj\Debug\net5.0\Property.AssemblyInfo.cs
+C:\Users\vipst\source\repos\Property\obj\Debug\net5.0\Property.csproj.CoreCompileInputs.cache
+C:\Users\vipst\source\repos\Property\obj\Debug\net5.0\Property.dll
+C:\Users\vipst\source\repos\Property\obj\Debug\net5.0\ref\Property.dll
+C:\Users\vipst\source\repos\Property\obj\Debug\net5.0\Property.pdb
+C:\Users\vipst\source\repos\Property\obj\Debug\net5.0\Property.genruntimeconfig.cache

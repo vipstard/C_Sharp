@@ -1,0 +1,15 @@
+C:\Users\vipst\source\repos\InitOnly\obj\Debug\net5.0\InitOnly.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vipst\source\repos\InitOnly\obj\Debug\net5.0\InitOnly.AssemblyInfoInputs.cache
+C:\Users\vipst\source\repos\InitOnly\obj\Debug\net5.0\InitOnly.AssemblyInfo.cs
+C:\Users\vipst\source\repos\InitOnly\obj\Debug\net5.0\InitOnly.csproj.CoreCompileInputs.cache
+C:\Users\vipst\source\repos\InitOnly\bin\Debug\net5.0\InitOnly.exe
+C:\Users\vipst\source\repos\InitOnly\bin\Debug\net5.0\InitOnly.deps.json
+C:\Users\vipst\source\repos\InitOnly\bin\Debug\net5.0\InitOnly.runtimeconfig.json
+C:\Users\vipst\source\repos\InitOnly\bin\Debug\net5.0\InitOnly.runtimeconfig.dev.json
+C:\Users\vipst\source\repos\InitOnly\bin\Debug\net5.0\InitOnly.dll
+C:\Users\vipst\source\repos\InitOnly\bin\Debug\net5.0\ref\InitOnly.dll
+C:\Users\vipst\source\repos\InitOnly\bin\Debug\net5.0\InitOnly.pdb
+C:\Users\vipst\source\repos\InitOnly\obj\Debug\net5.0\InitOnly.dll
+C:\Users\vipst\source\repos\InitOnly\obj\Debug\net5.0\ref\InitOnly.dll
+C:\Users\vipst\source\repos\InitOnly\obj\Debug\net5.0\InitOnly.pdb
+C:\Users\vipst\source\repos\InitOnly\obj\Debug\net5.0\InitOnly.genruntimeconfig.cache
