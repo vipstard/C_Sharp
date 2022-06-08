@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\PropertiesInInterface\bin\Debug\net5.0\PropertiesInInterface.exe
+D:\GIT\C_Sharp\PropertiesInInterface\bin\Debug\net5.0\PropertiesInInterface.deps.json
+D:\GIT\C_Sharp\PropertiesInInterface\bin\Debug\net5.0\PropertiesInInterface.runtimeconfig.json
+D:\GIT\C_Sharp\PropertiesInInterface\bin\Debug\net5.0\PropertiesInInterface.runtimeconfig.dev.json
+D:\GIT\C_Sharp\PropertiesInInterface\bin\Debug\net5.0\PropertiesInInterface.dll
+D:\GIT\C_Sharp\PropertiesInInterface\bin\Debug\net5.0\ref\PropertiesInInterface.dll
+D:\GIT\C_Sharp\PropertiesInInterface\bin\Debug\net5.0\PropertiesInInterface.pdb
+D:\GIT\C_Sharp\PropertiesInInterface\obj\Debug\net5.0\PropertiesInInterface.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\PropertiesInInterface\obj\Debug\net5.0\PropertiesInInterface.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\PropertiesInInterface\obj\Debug\net5.0\PropertiesInInterface.AssemblyInfo.cs
+D:\GIT\C_Sharp\PropertiesInInterface\obj\Debug\net5.0\PropertiesInInterface.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\PropertiesInInterface\obj\Debug\net5.0\PropertiesInInterface.dll
+D:\GIT\C_Sharp\PropertiesInInterface\obj\Debug\net5.0\ref\PropertiesInInterface.dll
+D:\GIT\C_Sharp\PropertiesInInterface\obj\Debug\net5.0\PropertiesInInterface.pdb
+D:\GIT\C_Sharp\PropertiesInInterface\obj\Debug\net5.0\PropertiesInInterface.genruntimeconfig.cache

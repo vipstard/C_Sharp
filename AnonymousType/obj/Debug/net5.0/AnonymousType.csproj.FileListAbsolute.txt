@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\AnonymousType\bin\Debug\net5.0\AnonymousType.exe
+D:\GIT\C_Sharp\AnonymousType\bin\Debug\net5.0\AnonymousType.deps.json
+D:\GIT\C_Sharp\AnonymousType\bin\Debug\net5.0\AnonymousType.runtimeconfig.json
+D:\GIT\C_Sharp\AnonymousType\bin\Debug\net5.0\AnonymousType.runtimeconfig.dev.json
+D:\GIT\C_Sharp\AnonymousType\bin\Debug\net5.0\AnonymousType.dll
+D:\GIT\C_Sharp\AnonymousType\bin\Debug\net5.0\ref\AnonymousType.dll
+D:\GIT\C_Sharp\AnonymousType\bin\Debug\net5.0\AnonymousType.pdb
+D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.AssemblyInfo.cs
+D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.dll
+D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\ref\AnonymousType.dll
+D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.pdb
+D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.genruntimeconfig.cache
