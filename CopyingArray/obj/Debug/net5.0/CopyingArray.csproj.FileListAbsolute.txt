@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\CopyingArray\bin\Debug\net5.0\CopyingArray.exe
+D:\GIT\C_Sharp\CopyingArray\bin\Debug\net5.0\CopyingArray.deps.json
+D:\GIT\C_Sharp\CopyingArray\bin\Debug\net5.0\CopyingArray.runtimeconfig.json
+D:\GIT\C_Sharp\CopyingArray\bin\Debug\net5.0\CopyingArray.runtimeconfig.dev.json
+D:\GIT\C_Sharp\CopyingArray\bin\Debug\net5.0\CopyingArray.dll
+D:\GIT\C_Sharp\CopyingArray\bin\Debug\net5.0\ref\CopyingArray.dll
+D:\GIT\C_Sharp\CopyingArray\bin\Debug\net5.0\CopyingArray.pdb
+D:\GIT\C_Sharp\CopyingArray\obj\Debug\net5.0\CopyingArray.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\CopyingArray\obj\Debug\net5.0\CopyingArray.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\CopyingArray\obj\Debug\net5.0\CopyingArray.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\CopyingArray\obj\Debug\net5.0\CopyingArray.AssemblyInfo.cs
+D:\GIT\C_Sharp\CopyingArray\obj\Debug\net5.0\CopyingArray.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\CopyingArray\obj\Debug\net5.0\CopyingArray.dll
+D:\GIT\C_Sharp\CopyingArray\obj\Debug\net5.0\ref\CopyingArray.dll
+D:\GIT\C_Sharp\CopyingArray\obj\Debug\net5.0\CopyingArray.pdb
+D:\GIT\C_Sharp\CopyingArray\obj\Debug\net5.0\CopyingArray.genruntimeconfig.cache

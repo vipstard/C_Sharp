@@ -1,0 +1,16 @@
+D:\GIT\C_Sharp\UsingQueue\bin\Debug\net5.0\UsingQueue.exe
+D:\GIT\C_Sharp\UsingQueue\bin\Debug\net5.0\UsingQueue.deps.json
+D:\GIT\C_Sharp\UsingQueue\bin\Debug\net5.0\UsingQueue.runtimeconfig.json
+D:\GIT\C_Sharp\UsingQueue\bin\Debug\net5.0\UsingQueue.runtimeconfig.dev.json
+D:\GIT\C_Sharp\UsingQueue\bin\Debug\net5.0\UsingQueue.dll
+D:\GIT\C_Sharp\UsingQueue\bin\Debug\net5.0\ref\UsingQueue.dll
+D:\GIT\C_Sharp\UsingQueue\bin\Debug\net5.0\UsingQueue.pdb
+D:\GIT\C_Sharp\UsingQueue\obj\Debug\net5.0\UsingQueue.csproj.AssemblyReference.cache
+D:\GIT\C_Sharp\UsingQueue\obj\Debug\net5.0\UsingQueue.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\UsingQueue\obj\Debug\net5.0\UsingQueue.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\UsingQueue\obj\Debug\net5.0\UsingQueue.AssemblyInfo.cs
+D:\GIT\C_Sharp\UsingQueue\obj\Debug\net5.0\UsingQueue.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\UsingQueue\obj\Debug\net5.0\UsingQueue.dll
+D:\GIT\C_Sharp\UsingQueue\obj\Debug\net5.0\ref\UsingQueue.dll
+D:\GIT\C_Sharp\UsingQueue\obj\Debug\net5.0\UsingQueue.pdb
+D:\GIT\C_Sharp\UsingQueue\obj\Debug\net5.0\UsingQueue.genruntimeconfig.cache

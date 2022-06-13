@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\Generic\bin\Debug\net5.0\Generic.exe
+D:\GIT\C_Sharp\Generic\bin\Debug\net5.0\Generic.deps.json
+D:\GIT\C_Sharp\Generic\bin\Debug\net5.0\Generic.runtimeconfig.json
+D:\GIT\C_Sharp\Generic\bin\Debug\net5.0\Generic.runtimeconfig.dev.json
+D:\GIT\C_Sharp\Generic\bin\Debug\net5.0\Generic.dll
+D:\GIT\C_Sharp\Generic\bin\Debug\net5.0\ref\Generic.dll
+D:\GIT\C_Sharp\Generic\bin\Debug\net5.0\Generic.pdb
+D:\GIT\C_Sharp\Generic\obj\Debug\net5.0\Generic.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\Generic\obj\Debug\net5.0\Generic.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\Generic\obj\Debug\net5.0\Generic.AssemblyInfo.cs
+D:\GIT\C_Sharp\Generic\obj\Debug\net5.0\Generic.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\Generic\obj\Debug\net5.0\Generic.dll
+D:\GIT\C_Sharp\Generic\obj\Debug\net5.0\ref\Generic.dll
+D:\GIT\C_Sharp\Generic\obj\Debug\net5.0\Generic.pdb
+D:\GIT\C_Sharp\Generic\obj\Debug\net5.0\Generic.genruntimeconfig.cache

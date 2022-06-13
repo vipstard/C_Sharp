@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\Indexer\obj\Debug\net5.0\Indexer.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\Indexer\obj\Debug\net5.0\Indexer.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\Indexer\obj\Debug\net5.0\Indexer.AssemblyInfo.cs
+D:\GIT\C_Sharp\Indexer\obj\Debug\net5.0\Indexer.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\Indexer\bin\Debug\net5.0\Indexer.exe
+D:\GIT\C_Sharp\Indexer\bin\Debug\net5.0\Indexer.deps.json
+D:\GIT\C_Sharp\Indexer\bin\Debug\net5.0\Indexer.runtimeconfig.json
+D:\GIT\C_Sharp\Indexer\bin\Debug\net5.0\Indexer.runtimeconfig.dev.json
+D:\GIT\C_Sharp\Indexer\bin\Debug\net5.0\Indexer.dll
+D:\GIT\C_Sharp\Indexer\bin\Debug\net5.0\ref\Indexer.dll
+D:\GIT\C_Sharp\Indexer\bin\Debug\net5.0\Indexer.pdb
+D:\GIT\C_Sharp\Indexer\obj\Debug\net5.0\Indexer.dll
+D:\GIT\C_Sharp\Indexer\obj\Debug\net5.0\ref\Indexer.dll
+D:\GIT\C_Sharp\Indexer\obj\Debug\net5.0\Indexer.pdb
+D:\GIT\C_Sharp\Indexer\obj\Debug\net5.0\Indexer.genruntimeconfig.cache
