@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\bin\Debug\net5.0\ExpressionTreeViaLambda.exe
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\bin\Debug\net5.0\ExpressionTreeViaLambda.deps.json
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\bin\Debug\net5.0\ExpressionTreeViaLambda.runtimeconfig.json
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\bin\Debug\net5.0\ExpressionTreeViaLambda.runtimeconfig.dev.json
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\bin\Debug\net5.0\ExpressionTreeViaLambda.dll
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\bin\Debug\net5.0\ref\ExpressionTreeViaLambda.dll
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\bin\Debug\net5.0\ExpressionTreeViaLambda.pdb
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\obj\Debug\net5.0\ExpressionTreeViaLambda.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\obj\Debug\net5.0\ExpressionTreeViaLambda.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\obj\Debug\net5.0\ExpressionTreeViaLambda.AssemblyInfo.cs
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\obj\Debug\net5.0\ExpressionTreeViaLambda.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\obj\Debug\net5.0\ExpressionTreeViaLambda.dll
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\obj\Debug\net5.0\ref\ExpressionTreeViaLambda.dll
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\obj\Debug\net5.0\ExpressionTreeViaLambda.pdb
+D:\GIT\C_Sharp\ExpressionTreeViaLambda\obj\Debug\net5.0\ExpressionTreeViaLambda.genruntimeconfig.cache

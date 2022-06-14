@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\ExpressionBodiedMember\bin\Debug\net5.0\ExpressionBodiedMember.exe
+D:\GIT\C_Sharp\ExpressionBodiedMember\bin\Debug\net5.0\ExpressionBodiedMember.deps.json
+D:\GIT\C_Sharp\ExpressionBodiedMember\bin\Debug\net5.0\ExpressionBodiedMember.runtimeconfig.json
+D:\GIT\C_Sharp\ExpressionBodiedMember\bin\Debug\net5.0\ExpressionBodiedMember.runtimeconfig.dev.json
+D:\GIT\C_Sharp\ExpressionBodiedMember\bin\Debug\net5.0\ExpressionBodiedMember.dll
+D:\GIT\C_Sharp\ExpressionBodiedMember\bin\Debug\net5.0\ref\ExpressionBodiedMember.dll
+D:\GIT\C_Sharp\ExpressionBodiedMember\bin\Debug\net5.0\ExpressionBodiedMember.pdb
+D:\GIT\C_Sharp\ExpressionBodiedMember\obj\Debug\net5.0\ExpressionBodiedMember.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\ExpressionBodiedMember\obj\Debug\net5.0\ExpressionBodiedMember.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\ExpressionBodiedMember\obj\Debug\net5.0\ExpressionBodiedMember.AssemblyInfo.cs
+D:\GIT\C_Sharp\ExpressionBodiedMember\obj\Debug\net5.0\ExpressionBodiedMember.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\ExpressionBodiedMember\obj\Debug\net5.0\ExpressionBodiedMember.dll
+D:\GIT\C_Sharp\ExpressionBodiedMember\obj\Debug\net5.0\ref\ExpressionBodiedMember.dll
+D:\GIT\C_Sharp\ExpressionBodiedMember\obj\Debug\net5.0\ExpressionBodiedMember.pdb
+D:\GIT\C_Sharp\ExpressionBodiedMember\obj\Debug\net5.0\ExpressionBodiedMember.genruntimeconfig.cache

@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\FuncTest\bin\Debug\net5.0\FuncTest.exe
+D:\GIT\C_Sharp\FuncTest\bin\Debug\net5.0\FuncTest.deps.json
+D:\GIT\C_Sharp\FuncTest\bin\Debug\net5.0\FuncTest.runtimeconfig.json
+D:\GIT\C_Sharp\FuncTest\bin\Debug\net5.0\FuncTest.runtimeconfig.dev.json
+D:\GIT\C_Sharp\FuncTest\bin\Debug\net5.0\FuncTest.dll
+D:\GIT\C_Sharp\FuncTest\bin\Debug\net5.0\ref\FuncTest.dll
+D:\GIT\C_Sharp\FuncTest\bin\Debug\net5.0\FuncTest.pdb
+D:\GIT\C_Sharp\FuncTest\obj\Debug\net5.0\FuncTest.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\FuncTest\obj\Debug\net5.0\FuncTest.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\FuncTest\obj\Debug\net5.0\FuncTest.AssemblyInfo.cs
+D:\GIT\C_Sharp\FuncTest\obj\Debug\net5.0\FuncTest.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\FuncTest\obj\Debug\net5.0\FuncTest.dll
+D:\GIT\C_Sharp\FuncTest\obj\Debug\net5.0\ref\FuncTest.dll
+D:\GIT\C_Sharp\FuncTest\obj\Debug\net5.0\FuncTest.pdb
+D:\GIT\C_Sharp\FuncTest\obj\Debug\net5.0\FuncTest.genruntimeconfig.cache

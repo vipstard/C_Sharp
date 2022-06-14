@@ -1,0 +1,15 @@
+D:\GIT\C_Sharp\SimpleLambda\bin\Debug\net5.0\SimpleLambda.exe
+D:\GIT\C_Sharp\SimpleLambda\bin\Debug\net5.0\SimpleLambda.deps.json
+D:\GIT\C_Sharp\SimpleLambda\bin\Debug\net5.0\SimpleLambda.runtimeconfig.json
+D:\GIT\C_Sharp\SimpleLambda\bin\Debug\net5.0\SimpleLambda.runtimeconfig.dev.json
+D:\GIT\C_Sharp\SimpleLambda\bin\Debug\net5.0\SimpleLambda.dll
+D:\GIT\C_Sharp\SimpleLambda\bin\Debug\net5.0\ref\SimpleLambda.dll
+D:\GIT\C_Sharp\SimpleLambda\bin\Debug\net5.0\SimpleLambda.pdb
+D:\GIT\C_Sharp\SimpleLambda\obj\Debug\net5.0\SimpleLambda.GeneratedMSBuildEditorConfig.editorconfig
+D:\GIT\C_Sharp\SimpleLambda\obj\Debug\net5.0\SimpleLambda.AssemblyInfoInputs.cache
+D:\GIT\C_Sharp\SimpleLambda\obj\Debug\net5.0\SimpleLambda.AssemblyInfo.cs
+D:\GIT\C_Sharp\SimpleLambda\obj\Debug\net5.0\SimpleLambda.csproj.CoreCompileInputs.cache
+D:\GIT\C_Sharp\SimpleLambda\obj\Debug\net5.0\SimpleLambda.dll
+D:\GIT\C_Sharp\SimpleLambda\obj\Debug\net5.0\ref\SimpleLambda.dll
+D:\GIT\C_Sharp\SimpleLambda\obj\Debug\net5.0\SimpleLambda.pdb
+D:\GIT\C_Sharp\SimpleLambda\obj\Debug\net5.0\SimpleLambda.genruntimeconfig.cache
