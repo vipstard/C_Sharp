@@ -1,0 +1,15 @@
+C:\TEST\C_Sharp\BasicThread\bin\Debug\net6.0\BasicThread.exe
+C:\TEST\C_Sharp\BasicThread\bin\Debug\net6.0\BasicThread.deps.json
+C:\TEST\C_Sharp\BasicThread\bin\Debug\net6.0\BasicThread.runtimeconfig.json
+C:\TEST\C_Sharp\BasicThread\bin\Debug\net6.0\BasicThread.dll
+C:\TEST\C_Sharp\BasicThread\bin\Debug\net6.0\BasicThread.pdb
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\BasicThread.csproj.AssemblyReference.cache
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\BasicThread.GeneratedMSBuildEditorConfig.editorconfig
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\BasicThread.AssemblyInfoInputs.cache
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\BasicThread.AssemblyInfo.cs
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\BasicThread.csproj.CoreCompileInputs.cache
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\BasicThread.dll
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\refint\BasicThread.dll
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\BasicThread.pdb
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\BasicThread.genruntimeconfig.cache
+C:\TEST\C_Sharp\BasicThread\obj\Debug\net6.0\ref\BasicThread.dll
