@@ -30,3 +30,4 @@ C:\TEST\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\
 C:\TEST\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.csproj.CopyComplete
 C:\TEST\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
 C:\TEST\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\LoginSuccess.g.cshtml.cs
