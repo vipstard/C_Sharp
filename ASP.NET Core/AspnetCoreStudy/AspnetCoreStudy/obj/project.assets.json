@@ -12946,11 +12946,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\USER\\source\\DI\\AspnetCoreStudy\\AspnetCoreStudy\\AspnetCoreStudy.csproj",
+      "projectUniqueName": "C:\\TEST\\C_Sharp\\ASP.NET Core\\AspnetCoreStudy\\AspnetCoreStudy\\AspnetCoreStudy.csproj",
       "projectName": "AspnetCoreStudy",
-      "projectPath": "C:\\Users\\USER\\source\\DI\\AspnetCoreStudy\\AspnetCoreStudy\\AspnetCoreStudy.csproj",
+      "projectPath": "C:\\TEST\\C_Sharp\\ASP.NET Core\\AspnetCoreStudy\\AspnetCoreStudy\\AspnetCoreStudy.csproj",
       "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USER\\source\\DI\\AspnetCoreStudy\\AspnetCoreStudy\\obj\\",
+      "outputPath": "C:\\TEST\\C_Sharp\\ASP.NET Core\\AspnetCoreStudy\\AspnetCoreStudy\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"

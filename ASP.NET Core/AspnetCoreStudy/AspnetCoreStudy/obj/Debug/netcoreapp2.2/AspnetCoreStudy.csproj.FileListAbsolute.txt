@@ -31,3 +31,33 @@ C:\Users\USER\source\DI\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\
 C:\Users\USER\source\DI\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\Study\Index.g.cshtml.cs
 C:\Users\USER\source\DI\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\Study\Java.g.cshtml.cs
 C:\Users\USER\source\DI\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.dll
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.pdb
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\bin\Debug\netcoreapp2.2\AspnetCoreStudy.deps.json
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\bin\Debug\netcoreapp2.2\AspnetCoreStudy.runtimeconfig.json
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\bin\Debug\netcoreapp2.2\AspnetCoreStudy.runtimeconfig.dev.json
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\bin\Debug\netcoreapp2.2\AspnetCoreStudy.dll
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\bin\Debug\netcoreapp2.2\AspnetCoreStudy.pdb
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\bin\Debug\netcoreapp2.2\AspnetCoreStudy.Views.dll
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\bin\Debug\netcoreapp2.2\AspnetCoreStudy.Views.pdb
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.csprojAssemblyReference.cache
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.csproj.CoreCompileInputs.cache
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.RazorAssemblyInfo.cache
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.RazorAssemblyInfo.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.AssemblyInfoInputs.cache
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.AssemblyInfo.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.TagHelpers.input.cache
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.TagHelpers.output.cache
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.RazorCoreGenerate.cache
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.RazorTargetAssemblyInfo.cache
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.RazorTargetAssemblyInfo.cs
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.Views.pdb
+C:\TEST\C_Sharp\ASP.NET Core\AspnetCoreStudy\AspnetCoreStudy\obj\Debug\netcoreapp2.2\AspnetCoreStudy.csproj.CopyComplete

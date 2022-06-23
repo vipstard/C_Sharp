@@ -13,6 +13,23 @@ namespace AspnetCoreStudy.Controllers
         //http:www.example.com/Home/Index
         public IActionResult Index()
         {
+
+            //오브젝트 이니셜라이저
+            var firstUser = new User
+            {
+                UserNo = 1,
+                UserName = "홍길동"
+            };
+            // 1번째 방법 @Model
+            // return View(firstUser);
+
+            // 2번째 방법 ViewBag
+            //ViewBag.User = firstUser;
+
+            // 3번째 방법 ViewData
+            ViewData["UserNo"] = firstUser.UserNo;
+            ViewData["UserName"] = firstUser.UserName;
+
             return View();
         }
 
