@@ -31,3 +31,39 @@ C:\TEST\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\
 C:\TEST\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
 C:\TEST\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
 C:\TEST\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\LoginSuccess.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\bin\Debug\netcoreapp2.2\AspnetNote.MVC6.deps.json
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\bin\Debug\netcoreapp2.2\AspnetNote.MVC6.runtimeconfig.json
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\bin\Debug\netcoreapp2.2\AspnetNote.MVC6.runtimeconfig.dev.json
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\bin\Debug\netcoreapp2.2\AspnetNote.MVC6.dll
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\bin\Debug\netcoreapp2.2\AspnetNote.MVC6.pdb
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\bin\Debug\netcoreapp2.2\AspnetNote.MVC6.Views.dll
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\bin\Debug\netcoreapp2.2\AspnetNote.MVC6.Views.pdb
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.csprojAssemblyReference.cache
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.csproj.CoreCompileInputs.cache
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.RazorAssemblyInfo.cache
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.RazorAssemblyInfo.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.AssemblyInfoInputs.cache
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.AssemblyInfo.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.TagHelpers.input.cache
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.TagHelpers.output.cache
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.RazorCoreGenerate.cache
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Error.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.RazorTargetAssemblyInfo.cache
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.RazorTargetAssemblyInfo.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.Views.pdb
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.dll
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.pdb
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.csproj.CopyComplete
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Home\LoginSuccess.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Note\Add.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Note\Edit.g.cshtml.cs
+C:\Users\Yoon DongIl\Desktop\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\Razor\Views\Note\Index.g.cshtml.cs

@@ -15,7 +15,7 @@ namespace AspnetNote.MVC6.DataContext
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Server=DESKTOP-J9EF3NB\SQLEXPRESS01;Database=AspnetNotDb;User Id=sa;Password=sa1234;");
+            optionsBuilder.UseSqlServer(@"Server=DESKTOP-HEILFL7\SQLEXPRESS;Database=AspnetNotDb;User Id=sa;Password=sa1234;");
         }
     }
 }

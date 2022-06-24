@@ -1,0 +1,29 @@
+﻿<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- DB에 있는 게시글 전부 불러오기 위해 foreach를 사용한다. -->
+        @foreach(var note in Model)
+        {
+            <tr>
+                <!-- 파라미터 넘기는 방식 -->
+                @*http://www.example.com*@
+                @*http://www.example.com/{noteNo}*@
+                @*http://www.example.com/Detail?noteNo=1*@ 
+
+                <td>@note.NoteNo</td>
+                <td><a asp-controller="Note" asp-action="Detial" asp-route-NoteNo="@note.NoteNo">@note.NoteTitle </a></td>
+                <td>@note.UserNo</td>
+            </tr>
+        }
+        
+    </tbody>
+</table>
+
+<a class="btn btn-warning" asp-controller="Note" asp-action="Add">글쓰기</a>

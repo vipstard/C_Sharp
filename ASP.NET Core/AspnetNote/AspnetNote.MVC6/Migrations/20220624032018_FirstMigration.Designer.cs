@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AspnetNote.MVC6.Migrations
 {
     [DbContext(typeof(AspnetNoteDbContext))]
-    [Migration("20220623002950_FirstMigration")]
+    [Migration("20220624032018_FirstMigration")]
     partial class FirstMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

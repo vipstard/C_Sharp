@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using AspnetNote.MVC6.DataContext;
 using AspnetNote.MVC6.Models;
 using AspnetNote.MVC6.ViewModel;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -39,18 +40,31 @@ namespace AspnetNote.MVC6.Controllers
                     // 비교할때 == 를 사용하면 메모리누수가 발생하기 때문에 Equals를 사용한다.
                     //var user = db.Users.FirstOrDefault(u=> u.UserId == model.UserId && u.UserPassword == model.UserPassword); 
                     var user = db.Users.FirstOrDefault(u => u.UserId.Equals(model.UserId) && u.UserPassword.Equals(model.UserPassword)); // 아이디 비밀번호 매칭
-
-                    // 로그인 실패
+                    
+                    /* 로그인 성공 */
                     if (user != null)
+                    { 
+                     //HttpContext.Session.SetInt32(key, value);
+                    HttpContext.Session.SetInt32("USER_LOGIN_KEY", user.UserNo);
+
+                        HttpContext.Session.GetInt32("USER_LOGIN_KEY");
                         return RedirectToAction("LoginSuccess", "Home");
-              
-                    // 로그인 성공, 사용자 ID 자체가 회원가입 X 경우
-                    ModelState.AddModelError(string.Empty, "사용자 ID 혹은 비밀번호가 올바르지 않습니다.");
+                    } 
+        
                 }
+                // 로그인 실패,  사용자 ID 자체가 회원가입 X 경우
+                ModelState.AddModelError(string.Empty, "사용자 ID 혹은 비밀번호가 올바르지 않습니다.");
+
             }
             return View(model);
         }
 
+        public IActionResult Logout()
+        {
+            //HttpContext.Session.Clear() : 세션 전체 삭제
+            HttpContext.Session.Remove("USER_LOGIN_KEY");
+            return RedirectToAction("index", "Home");
+        }
 
 
         /// <summary>
