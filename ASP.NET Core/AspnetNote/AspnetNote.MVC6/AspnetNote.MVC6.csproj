@@ -19,4 +19,9 @@
     <PackageReference Include="Trumbowyg" Version="1.0.1" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\upload\" />
+  </ItemGroup>
+
 </Project>

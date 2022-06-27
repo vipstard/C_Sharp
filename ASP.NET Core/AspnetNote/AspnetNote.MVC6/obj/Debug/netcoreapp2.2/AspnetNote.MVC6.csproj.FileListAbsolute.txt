@@ -103,4 +103,3 @@ C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core\AspnetNote\Aspne
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.dll
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.pdb
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.csproj.CopyComplete
-C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core\AspnetNote\AspnetNote.MVC6\obj\Debug\netcoreapp2.2\AspnetNote.MVC6.csprojAssemblyReference.cache
