@@ -1,0 +1,6 @@
+{
+  "name": "myproject",
+  "dependencies": {
+    "trumbowyg": "v2.5.1"
+  }
+}

@@ -30,7 +30,11 @@ namespace AspnetNote.MVC6.Controllers
             }
               
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="noteNo"></param>
+        /// <returns></returns>
         public IActionResult Detail(int noteNo)
         {
             if(HttpContext.Session.GetInt32("USER_LOGIN_KEY") == null)
