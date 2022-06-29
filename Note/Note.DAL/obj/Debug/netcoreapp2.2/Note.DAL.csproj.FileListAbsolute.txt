@@ -1,0 +1,14 @@
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\bin\Debug\netcoreapp2.2\Note.DAL.deps.json
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\bin\Debug\netcoreapp2.2\Note.DAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\bin\Debug\netcoreapp2.2\Note.DAL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\bin\Debug\netcoreapp2.2\Note.IDAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\bin\Debug\netcoreapp2.2\Note.Model.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\bin\Debug\netcoreapp2.2\Note.IDAL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\bin\Debug\netcoreapp2.2\Note.Model.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\obj\Debug\netcoreapp2.2\Note.DAL.csprojAssemblyReference.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\obj\Debug\netcoreapp2.2\Note.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\obj\Debug\netcoreapp2.2\Note.DAL.AssemblyInfoInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\obj\Debug\netcoreapp2.2\Note.DAL.AssemblyInfo.cs
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\obj\Debug\netcoreapp2.2\Note.DAL.csproj.CopyComplete
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\obj\Debug\netcoreapp2.2\Note.DAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.DAL\obj\Debug\netcoreapp2.2\Note.DAL.pdb

@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Note.DAL/1.0.0": {
+        "dependencies": {
+          "Note.IDAL": "1.0.0"
+        },
+        "runtime": {
+          "Note.DAL.dll": {}
+        }
+      },
+      "Note.IDAL/1.0.0": {
+        "dependencies": {
+          "Note.Model": "1.0.0"
+        },
+        "runtime": {
+          "Note.IDAL.dll": {}
+        }
+      },
+      "Note.Model/1.0.0": {
+        "runtime": {
+          "Note.Model.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Note.DAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Note.IDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Note.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
