@@ -1,0 +1,11 @@
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\bin\Debug\Hi.Oracle.DAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\bin\Debug\Hi.Oracle.DAL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\bin\Debug\Hi.IDAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\bin\Debug\Hi.Model.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\bin\Debug\Hi.IDAL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\bin\Debug\Hi.Model.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\obj\Debug\Hi.Oracle.DAL.csprojAssemblyReference.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\obj\Debug\Hi.Oracle.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\obj\Debug\Hi.Oracle.DAL.csproj.CopyComplete
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\obj\Debug\Hi.Oracle.DAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Oracle.DAL\obj\Debug\Hi.Oracle.DAL.pdb

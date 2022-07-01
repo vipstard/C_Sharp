@@ -1,0 +1,11 @@
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\bin\Debug\Hi.Bll.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\bin\Debug\Hi.Bll.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\bin\Debug\Hi.IDAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\bin\Debug\Hi.Model.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\bin\Debug\Hi.IDAL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\bin\Debug\Hi.Model.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\obj\Debug\Hi.Bll.csprojAssemblyReference.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\obj\Debug\Hi.Bll.csproj.CoreCompileInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\obj\Debug\Hi.Bll.csproj.CopyComplete
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\obj\Debug\Hi.Bll.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Bll\obj\Debug\Hi.Bll.pdb

@@ -1,0 +1,9 @@
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.IDAL\bin\Debug\Hi.IDAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.IDAL\bin\Debug\Hi.IDAL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.IDAL\bin\Debug\Hi.Model.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.IDAL\bin\Debug\Hi.Model.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.IDAL\obj\Debug\Hi.IDAL.csprojAssemblyReference.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.IDAL\obj\Debug\Hi.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.IDAL\obj\Debug\Hi.IDAL.csproj.CopyComplete
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.IDAL\obj\Debug\Hi.IDAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.IDAL\obj\Debug\Hi.IDAL.pdb

@@ -1,0 +1,6 @@
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Model\bin\Debug\Hi.Model.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Model\bin\Debug\Hi.Model.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Model\obj\Debug\Hi.Model.csprojAssemblyReference.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Model\obj\Debug\Hi.Model.csproj.CoreCompileInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Model\obj\Debug\Hi.Model.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\HI\Hi.Model\obj\Debug\Hi.Model.pdb
