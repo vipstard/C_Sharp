@@ -1,0 +1,14 @@
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\bin\Debug\netcoreapp2.2\Hello.BLL.deps.json
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\bin\Debug\netcoreapp2.2\Hello.BLL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\bin\Debug\netcoreapp2.2\Hello.BLL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\bin\Debug\netcoreapp2.2\Hello.IDAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\bin\Debug\netcoreapp2.2\Hello.Model.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\bin\Debug\netcoreapp2.2\Hello.IDAL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\bin\Debug\netcoreapp2.2\Hello.Model.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\obj\Debug\netcoreapp2.2\Hello.BLL.csprojAssemblyReference.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\obj\Debug\netcoreapp2.2\Hello.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\obj\Debug\netcoreapp2.2\Hello.BLL.AssemblyInfoInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\obj\Debug\netcoreapp2.2\Hello.BLL.AssemblyInfo.cs
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\obj\Debug\netcoreapp2.2\Hello.BLL.csproj.CopyComplete
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\obj\Debug\netcoreapp2.2\Hello.BLL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.BLL\obj\Debug\netcoreapp2.2\Hello.BLL.pdb

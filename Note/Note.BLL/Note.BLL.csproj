@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Note.IDAL\Note.IDAL.csproj" />
+    <ProjectReference Include="..\Note.Oracle.DAL\Note.Oracle.DAL.csproj" />
   </ItemGroup>
 
 </Project>

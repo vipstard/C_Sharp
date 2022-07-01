@@ -230,6 +230,19 @@
         "runtime": {
           "bin/placeholder/Note.Model.dll": {}
         }
+      },
+      "Note.Oracle.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Note.IDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Note.Oracle.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Note.Oracle.DAL.dll": {}
+        }
       }
     }
   },
@@ -711,12 +724,18 @@
       "type": "project",
       "path": "../Note.Model/Note.Model.csproj",
       "msbuildProject": "../Note.Model/Note.Model.csproj"
+    },
+    "Note.Oracle.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Note.Oracle.DAL/Note.Oracle.DAL.csproj",
+      "msbuildProject": "../Note.Oracle.DAL/Note.Oracle.DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
       "Microsoft.NETCore.App >= 2.2.0",
-      "Note.IDAL >= 1.0.0"
+      "Note.IDAL >= 1.0.0",
+      "Note.Oracle.DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -752,6 +771,9 @@
           "projectReferences": {
             "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.IDAL\\Note.IDAL.csproj": {
               "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.IDAL\\Note.IDAL.csproj"
+            },
+            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.Oracle.DAL\\Note.Oracle.DAL.csproj": {
+              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.Oracle.DAL\\Note.Oracle.DAL.csproj"
             }
           }
         }

@@ -1,0 +1,12 @@
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\bin\Debug\netcoreapp2.2\Hello.IDAL.deps.json
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\bin\Debug\netcoreapp2.2\Hello.IDAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\bin\Debug\netcoreapp2.2\Hello.IDAL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\bin\Debug\netcoreapp2.2\Hello.Model.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\bin\Debug\netcoreapp2.2\Hello.Model.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\obj\Debug\netcoreapp2.2\Hello.IDAL.csprojAssemblyReference.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\obj\Debug\netcoreapp2.2\Hello.IDAL.csproj.CoreCompileInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\obj\Debug\netcoreapp2.2\Hello.IDAL.AssemblyInfoInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\obj\Debug\netcoreapp2.2\Hello.IDAL.AssemblyInfo.cs
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\obj\Debug\netcoreapp2.2\Hello.IDAL.csproj.CopyComplete
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\obj\Debug\netcoreapp2.2\Hello.IDAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Hello\Hello.IDAL\obj\Debug\netcoreapp2.2\Hello.IDAL.pdb

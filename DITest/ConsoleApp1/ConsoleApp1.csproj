@@ -50,6 +50,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ClassLibrary1\ModuleB.csproj">
+      <Project>{BDECF296-AEAC-4660-97EB-38879F097FB8}</Project>
+      <Name>ModuleB</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ModuleA\ModuleA.csproj">
       <Project>{b6bc04f7-2d55-4ab4-a715-524c29bc46a3}</Project>
       <Name>ModuleA</Name>

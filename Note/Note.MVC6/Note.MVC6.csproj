@@ -14,7 +14,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Note.BLL\Note.BLL.csproj" />
-    <ProjectReference Include="..\Note.Oracle.DAL\Note.Oracle.DAL.csproj" />
+    <ProjectReference Include="..\Note.DAL\Note.DAL.csproj" />
   </ItemGroup>
 
 </Project>

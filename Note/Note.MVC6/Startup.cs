@@ -10,8 +10,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Note.BLL;
+using Note.DAL;
 using Note.IDAL;
-using Note.Oracle.DAL;
+
 
 namespace Note.MVC6
 {

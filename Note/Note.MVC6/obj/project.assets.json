@@ -4443,13 +4443,27 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
-          "Note.IDAL": "1.0.0"
+          "Note.IDAL": "1.0.0",
+          "Note.Oracle.DAL": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Note.BLL.dll": {}
         },
         "runtime": {
           "bin/placeholder/Note.BLL.dll": {}
+        }
+      },
+      "Note.DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "dependencies": {
+          "Note.IDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Note.DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Note.DAL.dll": {}
         }
       },
       "Note.IDAL/1.0.0": {
@@ -12130,6 +12144,11 @@
       "path": "../Note.BLL/Note.BLL.csproj",
       "msbuildProject": "../Note.BLL/Note.BLL.csproj"
     },
+    "Note.DAL/1.0.0": {
+      "type": "project",
+      "path": "../Note.DAL/Note.DAL.csproj",
+      "msbuildProject": "../Note.DAL/Note.DAL.csproj"
+    },
     "Note.IDAL/1.0.0": {
       "type": "project",
       "path": "../Note.IDAL/Note.IDAL.csproj",
@@ -12152,7 +12171,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Note.BLL >= 1.0.0",
-      "Note.Oracle.DAL >= 1.0.0"
+      "Note.DAL >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12189,8 +12208,8 @@
             "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.BLL\\Note.BLL.csproj": {
               "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.BLL\\Note.BLL.csproj"
             },
-            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.Oracle.DAL\\Note.Oracle.DAL.csproj": {
-              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.Oracle.DAL\\Note.Oracle.DAL.csproj"
+            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.DAL\\Note.DAL.csproj": {
+              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.DAL\\Note.DAL.csproj"
             }
           }
         }
