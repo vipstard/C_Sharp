@@ -4,7 +4,7 @@ C# 기본문법에 대한 공부를 이것이 C# 이다. 책으로 진행한 실
 <br><hr>
 
 
-### [ASP.NET MVC](https://github.com/vipstard/C_Sharp/tree/main/ASP.NET%20Core%202.2)<br>
+### [ASP.NET MVC](https://github.com/vipstard/C_Sharp/tree/main/ASP.NET%20MVC)<br>
 개발환경
 - ASP.NET Core 2.2 
 - sual Studio Community 2017 
