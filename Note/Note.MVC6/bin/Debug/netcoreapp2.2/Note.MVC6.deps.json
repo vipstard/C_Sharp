@@ -27,8 +27,7 @@
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
-          "Note.BLL": "1.0.0",
-          "Note.DAL": "1.0.0"
+          "Note.BLL": "1.0.0"
         },
         "runtime": {
           "Note.MVC6.dll": {}
@@ -39,24 +38,14 @@
       },
       "Note.BLL/1.0.0": {
         "dependencies": {
-          "Note.IDAL": "1.0.0"
+          "Note.IDAL": "1.0.0",
+          "Note.Oracle.DAL": "1.0.0"
         },
         "runtime": {
           "Note.BLL.dll": {}
         },
         "compile": {
           "Note.BLL.dll": {}
-        }
-      },
-      "Note.DAL/1.0.0": {
-        "dependencies": {
-          "Note.IDAL": "1.0.0"
-        },
-        "runtime": {
-          "Note.DAL.dll": {}
-        },
-        "compile": {
-          "Note.DAL.dll": {}
         }
       },
       "Note.IDAL/1.0.0": {
@@ -76,6 +65,17 @@
         },
         "compile": {
           "Note.Model.dll": {}
+        }
+      },
+      "Note.Oracle.DAL/1.0.0": {
+        "dependencies": {
+          "Note.IDAL": "1.0.0"
+        },
+        "runtime": {
+          "Note.Oracle.DAL.dll": {}
+        },
+        "compile": {
+          "Note.Oracle.DAL.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3285,17 +3285,17 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Note.DAL/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
     "Note.IDAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Note.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Note.Oracle.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

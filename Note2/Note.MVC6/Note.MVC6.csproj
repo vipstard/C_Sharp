@@ -20,6 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Note.Bll\Note.Bll.csproj" />
     <ProjectReference Include="..\Note.DAL\Note.DAL.csproj" />
+    <ProjectReference Include="..\Note.ViewModel\Note.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>

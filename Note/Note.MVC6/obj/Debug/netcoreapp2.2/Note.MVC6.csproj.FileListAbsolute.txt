@@ -6,11 +6,9 @@ C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netc
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.MVC6.Views.dll
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.MVC6.Views.pdb
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.BLL.dll
-C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.DAL.dll
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.IDAL.dll
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.Model.dll
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.BLL.pdb
-C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.DAL.pdb
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.IDAL.pdb
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.Model.pdb
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\obj\Debug\netcoreapp2.2\Note.MVC6.csprojAssemblyReference.cache
@@ -36,3 +34,5 @@ C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\obj\Debug\netc
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\obj\Debug\netcoreapp2.2\Note.MVC6.csproj.CopyComplete
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\obj\Debug\netcoreapp2.2\Note.MVC6.dll
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\obj\Debug\netcoreapp2.2\Note.MVC6.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.Oracle.DAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.MVC6\bin\Debug\netcoreapp2.2\Note.Oracle.DAL.pdb

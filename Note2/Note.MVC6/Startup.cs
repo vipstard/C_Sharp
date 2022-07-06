@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -41,11 +36,9 @@ namespace Note.MVC6
             /* Dependency Injection */
             /* IConfiguration에서 변수를 받아와서 싱글톤으로 메모리에 적재가되서 다른 클래스라이브러리에서 접근할 수 있게 함 */
             services.AddSingleton<IConfiguration>(Configuration);
+
             services.AddTransient<NoticeBll>();
             services.AddTransient<INoticeDal, NoticeDal>();
-
-           
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

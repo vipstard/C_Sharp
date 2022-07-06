@@ -4489,6 +4489,16 @@
         "runtime": {
           "bin/placeholder/Note.Model.dll": {}
         }
+      },
+      "Note.ViewModel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/Note.ViewModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Note.ViewModel.dll": {}
+        }
       }
     }
   },
@@ -12146,6 +12156,11 @@
       "type": "project",
       "path": "../Note.Model/Note.Model.csproj",
       "msbuildProject": "../Note.Model/Note.Model.csproj"
+    },
+    "Note.ViewModel/1.0.0": {
+      "type": "project",
+      "path": "../Note.ViewModel/Note.ViewModel.csproj",
+      "msbuildProject": "../Note.ViewModel/Note.ViewModel.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12156,7 +12171,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 2.2.6",
       "Microsoft.NETCore.App >= 2.2.0",
       "Note.Bll >= 1.0.0",
-      "Note.DAL >= 1.0.0"
+      "Note.DAL >= 1.0.0",
+      "Note.ViewModel >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -12194,6 +12210,9 @@
             },
             "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.DAL\\Note.DAL.csproj": {
               "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.DAL\\Note.DAL.csproj"
+            },
+            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.ViewModel\\Note.ViewModel.csproj": {
+              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.ViewModel\\Note.ViewModel.csproj"
             }
           }
         }

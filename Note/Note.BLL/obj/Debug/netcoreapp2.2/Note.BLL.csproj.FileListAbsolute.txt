@@ -12,3 +12,5 @@ C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.BLL\obj\Debug\netco
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.BLL\obj\Debug\netcoreapp2.2\Note.BLL.csproj.CopyComplete
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.BLL\obj\Debug\netcoreapp2.2\Note.BLL.dll
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.BLL\obj\Debug\netcoreapp2.2\Note.BLL.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.BLL\bin\Debug\netcoreapp2.2\Note.Oracle.DAL.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note\Note.BLL\bin\Debug\netcoreapp2.2\Note.Oracle.DAL.pdb

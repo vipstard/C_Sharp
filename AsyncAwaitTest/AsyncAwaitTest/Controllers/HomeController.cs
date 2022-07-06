@@ -34,6 +34,11 @@ namespace AsyncAwaitTest.Controllers
 
         public async Task<IActionResult> Contact()
         {
+            /* await Test1Async();
+               await Test2Async();
+               await Test3Async(); 
+               await 키워드를 만나면 여기서 걸리게 되기 때문에 아래처럼 선언해야한다.*/
+
             Stopwatch watch = new Stopwatch();
             watch.Start();
             var test1 =  Test1Async();

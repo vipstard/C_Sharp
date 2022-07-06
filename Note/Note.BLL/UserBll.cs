@@ -13,7 +13,8 @@ namespace Note.BLL
 
         //private UserDal _userDal = new UserDal(); 강한결합방식
 
-        private readonly IUserDal _userDal; // 느슨한 결합 방식
+        /* 느슨한 결합 방식 */
+        private readonly IUserDal _userDal; 
 
         public UserBll(IUserDal userDal)
         {

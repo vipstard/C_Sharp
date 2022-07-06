@@ -1,22 +1,17 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using IdentityTest.Models;
-using IdentityTest.Data;
-using System.Linq;
 
 namespace IdentityTest.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ApplicationDbContext _dbContext;
-
-        public HomeController(ApplicationDbContext dbContext)
-        {
-            _dbContext = dbContext;
-        }
         public IActionResult Index()
         {
-            var user = _dbContext.Users.FirstOrDefault();
             return View();
         }
 

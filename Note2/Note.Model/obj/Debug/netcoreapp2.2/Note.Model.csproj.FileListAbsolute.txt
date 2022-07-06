@@ -6,3 +6,4 @@ C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note2\Note.Model\obj\Debug\ne
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note2\Note.Model\obj\Debug\netcoreapp2.2\Note.Model.AssemblyInfo.cs
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note2\Note.Model\obj\Debug\netcoreapp2.2\Note.Model.dll
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note2\Note.Model\obj\Debug\netcoreapp2.2\Note.Model.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\Note2\Note.Model\obj\Debug\netcoreapp2.2\Note.Model.csprojAssemblyReference.cache

@@ -30,7 +30,8 @@
           "Microsoft.EntityFrameworkCore.Tools": "2.2.6",
           "Microsoft.NETCore.App": "2.2.0",
           "Note.Bll": "1.0.0",
-          "Note.DAL": "1.0.0"
+          "Note.DAL": "1.0.0",
+          "Note.ViewModel": "1.0.0"
         },
         "runtime": {
           "Note.MVC6.dll": {}
@@ -297,6 +298,14 @@
         },
         "compile": {
           "Note.Model.dll": {}
+        }
+      },
+      "Note.ViewModel/1.0.0": {
+        "runtime": {
+          "Note.ViewModel.dll": {}
+        },
+        "compile": {
+          "Note.ViewModel.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3497,6 +3506,11 @@
       "sha512": ""
     },
     "Note.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Note.ViewModel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v2.2": {
       "Note.BLL/1.0.0": {
         "dependencies": {
-          "Note.IDAL": "1.0.0"
+          "Note.IDAL": "1.0.0",
+          "Note.Oracle.DAL": "1.0.0"
         },
         "runtime": {
           "Note.BLL.dll": {}
@@ -26,6 +27,14 @@
         "runtime": {
           "Note.Model.dll": {}
         }
+      },
+      "Note.Oracle.DAL/1.0.0": {
+        "dependencies": {
+          "Note.IDAL": "1.0.0"
+        },
+        "runtime": {
+          "Note.Oracle.DAL.dll": {}
+        }
       }
     }
   },
@@ -41,6 +50,11 @@
       "sha512": ""
     },
     "Note.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Note.Oracle.DAL/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

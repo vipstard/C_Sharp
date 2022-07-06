@@ -1,9 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Note.Model;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Note.DAL.DataContext
 {
