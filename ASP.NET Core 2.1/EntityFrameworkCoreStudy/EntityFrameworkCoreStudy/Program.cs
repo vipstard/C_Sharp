@@ -13,6 +13,15 @@ namespace EntityFrameworkCoreStudy
         {
             using (var db = new EfStudyDbContext())
             {
+
+                var list = db.Users.ToList();
+                                
+
+                foreach (var user in list)
+                {
+                    Console.WriteLine($"{user.UserId}.{user.UserName}({user.Birth})");
+                }
+
                 #region + Linq의 분류 (2가지)
                 // # Linq 분류(2가지)
                 // 1. 쿼리구문
@@ -53,12 +62,7 @@ namespace EntityFrameworkCoreStudy
                 // # DecendingBy()
                 // 6, 5, 4, 3, 2, 1
 
-                var list = db.Users.OrderByDescending(u=>u.UserName).ToList(); // 이름순으로 정렬한다.
 
-                foreach(var user in list)
-                {
-                    Console.WriteLine($"{user.UserId}.{user.UserName}({user.Birth})") ;
-                }
             }
 
         }
