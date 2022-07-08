@@ -1,0 +1,5 @@
+﻿INSERT INTO [dbo].[Users] ([UserId], [UserName], [Birth]) VALUES (1, N'???', N'909090')
+INSERT INTO [dbo].[Users] ([UserId], [UserName], [Birth]) VALUES (2, N'???', NULL)
+INSERT INTO [dbo].[Users] ([UserId], [UserName], [Birth]) VALUES (3, N'???', NULL)
+INSERT INTO [dbo].[Users] ([UserId], [UserName], [Birth]) VALUES (4, N'???', NULL)
+INSERT INTO [dbo].[Users] ([UserId], [UserName], [Birth]) VALUES (5, N'???', NULL)

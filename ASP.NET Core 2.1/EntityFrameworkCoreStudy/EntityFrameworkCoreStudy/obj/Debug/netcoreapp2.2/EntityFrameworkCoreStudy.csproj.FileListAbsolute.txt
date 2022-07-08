@@ -6,3 +6,6 @@ C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core 2.1\EntityFramew
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core 2.1\EntityFrameworkCoreStudy\EntityFrameworkCoreStudy\obj\Debug\netcoreapp2.2\EntityFrameworkCoreStudy.csproj.CoreCompileInputs.cache
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core 2.1\EntityFrameworkCoreStudy\EntityFrameworkCoreStudy\obj\Debug\netcoreapp2.2\EntityFrameworkCoreStudy.AssemblyInfoInputs.cache
 C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core 2.1\EntityFrameworkCoreStudy\EntityFrameworkCoreStudy\obj\Debug\netcoreapp2.2\EntityFrameworkCoreStudy.AssemblyInfo.cs
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core 2.1\EntityFrameworkCoreStudy\EntityFrameworkCoreStudy\bin\Debug\netcoreapp2.2\EntityFrameworkCoreStudy.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core 2.1\EntityFrameworkCoreStudy\EntityFrameworkCoreStudy\obj\Debug\netcoreapp2.2\EntityFrameworkCoreStudy.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\ASP.NET Core 2.1\EntityFrameworkCoreStudy\EntityFrameworkCoreStudy\obj\Debug\netcoreapp2.2\EntityFrameworkCoreStudy.pdb
