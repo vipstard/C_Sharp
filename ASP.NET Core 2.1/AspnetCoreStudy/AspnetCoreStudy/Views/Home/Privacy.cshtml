@@ -1,6 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Privacy Policy";
+
+    // 특정 뷰만 레이아웃 적용하고싶지 않을때
+    Layout = null;
+    //커스텀 하려면 Shared에서 새로만들고 레이아웃이름을 지정해준다.
+    //Layout="_AnotherLayout"
 }
 <h1>@ViewData["Title"]</h1>
 
 <p>Use this page to detail your site's privacy policy.</p>
+
+

@@ -1,8 +1,5 @@
 ﻿using EntityFrameworkCoreStudy.Data;
-using EntityFrameworkCoreStudy.Entities;
-using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace EntityFrameworkCoreStudy
@@ -70,7 +67,7 @@ namespace EntityFrameworkCoreStudy
 
  
 
-
+    
 }
 
 // 1. SELECT 쿼리

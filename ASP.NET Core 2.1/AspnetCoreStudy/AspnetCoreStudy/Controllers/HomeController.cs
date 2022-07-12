@@ -41,7 +41,7 @@ namespace AspnetCoreStudy.Controllers
                 UserAge = 100
             };
 
-            return View();
+            return View(vm);
         }
 
         public IActionResult Privacy()

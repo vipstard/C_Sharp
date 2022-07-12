@@ -12957,11 +12957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\WebApplication1\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\Yoon DongIl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\WebApplication1\\obj\\",
+      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
