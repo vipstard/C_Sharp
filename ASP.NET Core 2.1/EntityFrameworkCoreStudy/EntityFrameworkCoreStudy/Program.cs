@@ -29,6 +29,7 @@ namespace EntityFrameworkCoreStudy
                 // 2. 메서드 구문  직관적, 간단하게 쓸 수있음
                 // db.Users.Where().ToList();
                 #endregion
+
                 // .Where(), OrderBy()
                 // 1. Where() -> 조건절 -> 리스트가 가능
                 // SELECT * FROM Users WHERE UserId =1

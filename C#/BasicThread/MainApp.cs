@@ -1,4 +1,7 @@
-﻿class MainApp
+﻿using System;
+using System.Threading;
+
+class MainApp
 {
     static void DoSomething()
     {
