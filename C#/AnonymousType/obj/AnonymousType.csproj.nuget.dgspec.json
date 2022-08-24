@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GIT\\C_Sharp\\AnonymousType\\AnonymousType.csproj": {}
+    "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\C#\\AnonymousType\\AnonymousType.csproj": {}
   },
   "projects": {
-    "D:\\GIT\\C_Sharp\\AnonymousType\\AnonymousType.csproj": {
+    "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\C#\\AnonymousType\\AnonymousType.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GIT\\C_Sharp\\AnonymousType\\AnonymousType.csproj",
+        "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\C#\\AnonymousType\\AnonymousType.csproj",
         "projectName": "AnonymousType",
-        "projectPath": "D:\\GIT\\C_Sharp\\AnonymousType\\AnonymousType.csproj",
-        "packagesPath": "C:\\Users\\vipst\\.nuget\\packages\\",
-        "outputPath": "D:\\GIT\\C_Sharp\\AnonymousType\\obj\\",
+        "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\C#\\AnonymousType\\AnonymousType.csproj",
+        "packagesPath": "C:\\Users\\Yoon DongIl\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\C#\\AnonymousType\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\vipst\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Yoon DongIl\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -49,12 +52,30 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x86",
+              "version": "[5.0.17, 5.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

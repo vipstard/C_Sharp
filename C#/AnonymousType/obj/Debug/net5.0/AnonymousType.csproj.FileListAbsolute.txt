@@ -14,3 +14,19 @@ D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.dll
 D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\ref\AnonymousType.dll
 D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.pdb
 D:\GIT\C_Sharp\AnonymousType\obj\Debug\net5.0\AnonymousType.genruntimeconfig.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\AnonymousType.csproj.AssemblyReference.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\AnonymousType.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\AnonymousType.AssemblyInfoInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\AnonymousType.AssemblyInfo.cs
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\AnonymousType.csproj.CoreCompileInputs.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\AnonymousType.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\AnonymousType.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\bin\Debug\net5.0\AnonymousType.exe
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\bin\Debug\net5.0\AnonymousType.deps.json
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\bin\Debug\net5.0\AnonymousType.runtimeconfig.json
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\bin\Debug\net5.0\AnonymousType.runtimeconfig.dev.json
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\bin\Debug\net5.0\AnonymousType.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\bin\Debug\net5.0\AnonymousType.pdb
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\refint\AnonymousType.dll
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\AnonymousType.genruntimeconfig.cache
+C:\Users\Yoon DongIl\Desktop\윤동일\GIT\C_Sharp\C#\AnonymousType\obj\Debug\net5.0\ref\AnonymousType.dll

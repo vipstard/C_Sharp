@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "loIb6Arz4xChWE/XYuEPWhcMrazKrZyI881lMBSX/nG8PeNFE+xoIaGFz05XBQaCFpTur47XYBrIDkdfV7LGcw==",
+  "dgSpecHash": "LAemz9xoTFvFwnMsRiJy3+C3uEETdiWbT87/m6AcikDQ1e2gT2owsmIb8788QjJQ+v+A8SfnOWX9nwRqEUbYyA==",
   "success": true,
-  "projectFilePath": "D:\\GIT\\C_Sharp\\AnonymousType\\AnonymousType.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\C#\\AnonymousType\\AnonymousType.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Yoon DongIl\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Yoon DongIl\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Yoon DongIl\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\Yoon DongIl\\.nuget\\packages\\microsoft.netcore.app.host.win-x86\\5.0.17\\microsoft.netcore.app.host.win-x86.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }
