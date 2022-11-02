@@ -708,11 +708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.IDAL\\Note.IDAL.csproj",
+      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.IDAL\\Note.IDAL.csproj",
       "projectName": "Note.IDAL",
-      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.IDAL\\Note.IDAL.csproj",
+      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.IDAL\\Note.IDAL.csproj",
       "packagesPath": "C:\\Users\\Yoon DongIl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.IDAL\\obj\\",
+      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.IDAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -731,8 +731,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.Model\\Note.Model.csproj": {
-              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.Model\\Note.Model.csproj"
+            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.Model\\Note.Model.csproj": {
+              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.Model\\Note.Model.csproj"
             }
           }
         }

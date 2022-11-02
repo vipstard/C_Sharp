@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.Model\\Note.Model.csproj",
+      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note\\Note.Model\\Note.Model.csproj",
       "projectName": "Note.Model",
-      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.Model\\Note.Model.csproj",
+      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note\\Note.Model\\Note.Model.csproj",
       "packagesPath": "C:\\Users\\Yoon DongIl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note\\Note.Model\\obj\\",
+      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note\\Note.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

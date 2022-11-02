@@ -12182,11 +12182,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.MVC6\\Note.MVC6.csproj",
+      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.MVC6\\Note.MVC6.csproj",
       "projectName": "Note.MVC6",
-      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.MVC6\\Note.MVC6.csproj",
+      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.MVC6\\Note.MVC6.csproj",
       "packagesPath": "C:\\Users\\Yoon DongIl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.MVC6\\obj\\",
+      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.MVC6\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12205,14 +12205,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.Bll\\Note.Bll.csproj": {
-              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.Bll\\Note.Bll.csproj"
+            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.Bll\\Note.Bll.csproj": {
+              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.Bll\\Note.Bll.csproj"
             },
-            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.DAL\\Note.DAL.csproj": {
-              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.DAL\\Note.DAL.csproj"
+            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.DAL\\Note.DAL.csproj": {
+              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.DAL\\Note.DAL.csproj"
             },
-            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.ViewModel\\Note.ViewModel.csproj": {
-              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\Note2\\Note.ViewModel\\Note.ViewModel.csproj"
+            "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.ViewModel\\Note.ViewModel.csproj": {
+              "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\Note2\\Note.ViewModel\\Note.ViewModel.csproj"
             }
           }
         }

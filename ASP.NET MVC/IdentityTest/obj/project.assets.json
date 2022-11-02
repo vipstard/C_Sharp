@@ -12957,11 +12957,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\IdentityTest\\IdentityTest.csproj",
+      "projectUniqueName": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\IdentityTest\\IdentityTest.csproj",
       "projectName": "IdentityTest",
-      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\IdentityTest\\IdentityTest.csproj",
+      "projectPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\IdentityTest\\IdentityTest.csproj",
       "packagesPath": "C:\\Users\\Yoon DongIl\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\IdentityTest\\obj\\",
+      "outputPath": "C:\\Users\\Yoon DongIl\\Desktop\\윤동일\\GIT\\C_Sharp\\ASP.NET MVC\\IdentityTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
