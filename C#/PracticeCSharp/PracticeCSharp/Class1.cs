@@ -15,44 +15,38 @@ namespace PracticeCSharp
         public static void Main()
         {
 
-            var devices = CaptureDeviceList.Instance;
+            //SharpPcap
             var deviceIp = LibPcapLiveDeviceList.Instance;
-            //foreach (var dev in devices)
-            //    Console.WriteLine("{0}\n", dev);
-
-            Console.WriteLine("=================================");
-            foreach (var dev in deviceIp)
-            {
-                Console.WriteLine("{0}\n", dev);
-            }
-            Console.WriteLine("=================================");
-
-            NetworkInterface[] nicArray = NetworkInterface.GetAllNetworkInterfaces();
-
-            foreach (var nic in nicArray)
-            {
-                if(nic.NetworkInterfaceType == NetworkInterfaceType.Wireless80211 || nic.NetworkInterfaceType ==NetworkInterfaceType.Ethernet)
-                {
-                    foreach (var ip in nic.GetIPProperties().UnicastAddresses)
-                    {
-                        Console.WriteLine("{0} / {1} / {2} / {3}", nic.Name, nic.Description, nic.NetworkInterfaceType.ToString(), nic.Id, ip.Address.ToString());
-                    }
-               
-
-                }
-
-            }
+            
             //foreach (var dev in deviceIp)
             //{
-            //    if (dev.Addresses.Count != 0)
-            //    {
-            //        var ip = dev.Addresses[1].Addr.ipAddress;
-            //        Console.WriteLine("ip : {0}\n", ip);
+            //    //Console.WriteLine(dev);
+            //    Console.WriteLine($"{dev.Name} /  {dev.Description}  /  {(dev.Addresses.Count != 0 ? dev.Addresses[1].Addr:"NULL")}  / {dev.MacAddress}  \n");
+            //}
+            Console.WriteLine("=================================");
+
+            //NetworkInterface
+            NetworkInterface[] nicArray = NetworkInterface.GetAllNetworkInterfaces();
+            //foreach (var nic in nicArray)
+            //{
+
+            //    Console.WriteLine($"{nic.GetPhysicalAddress()}");
+            //            //Console.WriteLine("{0} / {1} / {2} ", nic.Name, nic.Description, nic.NetworkInterfaceType.ToString());
+
+
+
             //    }
 
-            //}
+            //CaptureDeviceList devices = CaptureDeviceList.Instance;
+            //foreach (ICaptureDevice dev in devices)
+            //    Console.WriteLine("{0} \n", dev.ToString());
 
-
+            //////////////////////////
+            String diretory = "C:\\nms4sa\\database\\";
+            StringBuilder strBuilder = new StringBuilder(diretory);
+            strBuilder.Append("iec61850_Server_Scl");
+            Console.WriteLine(strBuilder);
         }
+
     }
 }
