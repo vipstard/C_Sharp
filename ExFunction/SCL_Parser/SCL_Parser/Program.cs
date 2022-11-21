@@ -7,19 +7,29 @@ namespace SCL_Parser
     {
         public static void Main()
         {
+
             String path = "C:\\nms4sa\\database\\D000_NMS.cid";
 
+            //1번
             XmlDocument xmlFile = new XmlDocument();
             xmlFile.Load(path);
 
-            XmlNodeList XmlList = xmlFile.GetElementsByTagName("SubNetwork");
+            XmlNodeList XmlList = xmlFile.GetElementsByTagName("Communication");
 
-            Console.WriteLine(XmlList.Item(0).InnerText);
-            //foreach (XmlNode item in XmlList)
-            //{
-            //    Console.WriteLine(item.InnerText);
-            //    Console.WriteLine($"{item["ConnectedAp"]["Address"]["P"].InnerText}");
-            //}
+            foreach (XmlNode item in XmlList)
+            {
+                Console.WriteLine($"{item["SubNetwork"]["ConnectedAP"]["Address"]["P"].InnerText}");
+
+            }
+            
+            //2번 LInq
+            XNamespace ns = "http://www.iec.ch/61850/2003/SCL";
+            var result = XDocument.Load("C:\\nms4sa\\database\\D000_NMS.cid")
+                .Descendants(ns + "P")
+                .Where(e => e.Attribute("type").Value == "IP")
+                .FirstOrDefault()?.Value;
+
+            Console.WriteLine(result);
         }
     }
 
