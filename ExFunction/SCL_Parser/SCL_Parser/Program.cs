@@ -21,6 +21,8 @@ namespace SCL_Parser
                 Console.WriteLine($"{item["SubNetwork"]["ConnectedAP"]["Address"]["P"].InnerText}");
 
             }
+
+
             
             //2번 LInq
             XNamespace ns = "http://www.iec.ch/61850/2003/SCL";
