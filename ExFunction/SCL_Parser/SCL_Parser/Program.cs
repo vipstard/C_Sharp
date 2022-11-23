@@ -11,7 +11,7 @@ namespace SCL_Parser
 
             String path = "C:\\nms4sa\\database\\D000_NMS.cid";
 
-            //1번
+            // 1번
             XmlDocument xmlFile = new XmlDocument();
             xmlFile.Load(path);
 
@@ -22,7 +22,7 @@ namespace SCL_Parser
                 Console.WriteLine($"{item["SubNetwork"]["ConnectedAP"]["Address"]["P"].InnerText}");
             }
 
-            //2번 LInq  nameSpace 필요
+            // 2번 LInq  (nameSpace 필요)
             XNamespace ns = XDocument.Load(path).Root.GetDefaultNamespace();
             var result = XDocument.Load(path)
                 .Descendants(ns + "P")
@@ -30,12 +30,46 @@ namespace SCL_Parser
                 .FirstOrDefault()?.Value;
 
             Console.WriteLine(result);
-            
+
+            // 3번 만약 <ConnectedAp> 가 여러개 라면? => .ToList()
+
+            var results = XDocument.Load(path)
+                .Descendants(ns + "P")
+                .Where(e => e.Attribute("type").Value == "IP")
+                .ToList();
+
+            Console.WriteLine("===========");
+
+            foreach (var rs in results)
+            {
+                Console.WriteLine(rs.Value);
+            }
+
+            // 4번 <ConnectedAp> iedName들 찾기
+            var iedName = XDocument.Load(path).Descendants(ns + "ConnectedAP").Attributes("iedName").ToList();
+
+            foreach (var rs in iedName)
+            {
+                Console.WriteLine(rs.Value);
+            }
+
+            // 5번 <ConnectedAp> 에서 필요한 정보 들 빼오기 (iedName, ip)
+            Console.WriteLine("\n\n");
+
+            var ConnectAp = XDocument.Load(path).Descendants(ns + "ConnectedAP").ToList();
+            foreach (var ca in ConnectAp)
+            {
+                
+                Console.WriteLine(ca.Attribute("iedName").Value); 
+                Console.WriteLine(ca.Descendants(ns+"P").Where(e=>e.Attribute("type").Value == "IP").FirstOrDefault()?.Value); 
+            }
+
         }
     }
 
     // 아래 XML  에서 P type="IP"의 값을 얻고싶다.
-
+    
+    //<? xml version="1.0" encoding="utf-8"?>
     //<SCL xmlns = "http://www.iec.ch/61850/2003/SCL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.iec.ch/61850/2003/SCL SCL.xsd">
     //<Header id = "NMS_IEC61850_SERVER" nameStructure="IEDName"/>
     //<Communication>
@@ -64,4 +98,6 @@ namespace SCL_Parser
     //        </ConnectedAP>
     //    </SubNetwork>
     //</Communication>
+
+    //</SCL>
 }
