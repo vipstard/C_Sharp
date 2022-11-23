@@ -1,4 +1,5 @@
-﻿using System.Xml;
+﻿using System.IO;
+using System.Xml;
 using System.Xml.Linq;
 
 namespace SCL_Parser
@@ -19,19 +20,17 @@ namespace SCL_Parser
             foreach (XmlNode item in XmlList)
             {
                 Console.WriteLine($"{item["SubNetwork"]["ConnectedAP"]["Address"]["P"].InnerText}");
-
             }
 
-
-            
-            //2번 LInq
-            XNamespace ns = "http://www.iec.ch/61850/2003/SCL";
-            var result = XDocument.Load("C:\\nms4sa\\database\\D000_NMS.cid")
+            //2번 LInq  nameSpace 필요
+            XNamespace ns = XDocument.Load(path).Root.GetDefaultNamespace();
+            var result = XDocument.Load(path)
                 .Descendants(ns + "P")
                 .Where(e => e.Attribute("type").Value == "IP")
                 .FirstOrDefault()?.Value;
 
             Console.WriteLine(result);
+            
         }
     }
 
