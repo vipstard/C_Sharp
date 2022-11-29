@@ -16,15 +16,15 @@ namespace FileStream_SclParesr.Controller
         }
 
         [HttpPost("/Home/upload")]
-        public async Task<IActionResult> upload(IFormFile testFile)
+        public  IActionResult upload(IFormFile testFile)
         {
             //1.  stringBuilder 사용해서 filestream 사용
-            //var result = new StringBuilder();
-            //using (var reader = new StreamReader(testFile.OpenReadStream()))
-            //{
-            //    while (reader.Peek() >= 0)
-            //        result.AppendLine(await reader.ReadLineAsync());
-            //}
+            var result = new StringBuilder();
+            using (var reader = new StreamReader(testFile.OpenReadStream()))
+            {
+                while (reader.Peek() >= 0)
+                    result.AppendLine(await reader.ReadLineAsync());
+            }
             //Debug.WriteLine(result.ToString());
 
 
@@ -33,8 +33,8 @@ namespace FileStream_SclParesr.Controller
             {
                 await testFile.CopyToAsync(str);
                 str.Position = 0;
-                var xml = XDocument.Load(str);
 
+                var xml = XDocument.Load(str);
                 XElement root = xml.Document.Root;
                 XNamespace ns = root.GetDefaultNamespace();
 
