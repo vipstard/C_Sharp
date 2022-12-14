@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -13,7 +14,7 @@ namespace SCL_Parser
         public static void Main()
         {
 
-            String path = "C:\\nms4sa\\database\\TEST.cid";
+            String path = "C:\\nms4sa\\database\\D000_NMS.cid";
             XDocument xd = XDocument.Load(path);
             XElement root = xd.Document.Root;
 
@@ -32,10 +33,46 @@ namespace SCL_Parser
             {
              Console.WriteLine($"{ca.iedName}, {ca.ip}");   
             }
+
+
+            //DATASET MEMBER 구하기 위해 <DataSet > ...</DataSet> 값 구하기
+            string st = "DataSet_BOOL";
+
+            var dm = root.Descendants(ns + "DataSet").Where(x => (string)x.Attribute("name") == st).ToList();
+
+            var dm2 = dm.Descendants(ns + "FCDA").Select(x => new dm()
+            {
+                address = x.Attribute("lnClass").Value + "$" +  x.Attribute("fc").Value + "$" + x.Attribute("doName").Value
+            }).ToList();
+
+            foreach (var d in dm)
+            {
+                Console.WriteLine(d.ToString());
+            }
+
+            foreach (var d2 in dm2)
+            {
+                Console.WriteLine(d2.address);
+            }
         }
 
-        public class ConnectedAp
+        public class dm
         {
+            public String address { get; set; }
+
+
+            public dm()
+            {
+            }
+
+            public dm(string address)
+            {
+                this.address = address;
+
+            }
+        }
+        public class ConnectedAp
+        { 
             public String iedName { get; set; }
             public String ip { get; set; }
 

@@ -14,7 +14,7 @@ namespace SCL_Parser
 
         public static void Main()
         {
-            String path = "C:\\nms4sa\\database\\TEST.cid";
+            String path = "C:\\nms4sa\\database\\D000_NMS.cid";
             XNamespace ns = XDocument.Load(path).Root.GetDefaultNamespace();
             XDocument doc = XDocument.Load(path); //Loads the document by looking for the given path
 
