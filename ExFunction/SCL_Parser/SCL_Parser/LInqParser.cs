@@ -14,7 +14,7 @@ namespace SCL_Parser
         public static void Main()
         {
 
-            String path = "C:\\nms4sa\\database\\D000_NMS.cid";
+            String path = "C:\\nms4sa\\database\\KEPCO_preconfigured cid file_Ver 2.2.cid";
             XDocument xd = XDocument.Load(path);
             XElement root = xd.Document.Root;
 
@@ -25,7 +25,7 @@ namespace SCL_Parser
                 .Select(x => new ConnectedAp()
                 {
                     iedName = x.Attribute("iedName").Value,
-                    ip = x.Descendants(ns +"P").First().Value
+                    ip = x.Descendants(ns +"P").Where(e => e.Attribute("type").Value == "IP").First().Value
                 }).ToList();
 
 
