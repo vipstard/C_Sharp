@@ -36,13 +36,12 @@ namespace SCL_Parser
 
 
             //DATASET MEMBER 구하기 위해 <DataSet > ...</DataSet> 값 구하기
-            string st = "DataSet_BOOL";
 
-            var dm = root.Descendants(ns + "DataSet").Where(x => (string)x.Attribute("name") == st).ToList();
+            var dm = root.Descendants(ns + "DataSet").ToList();
 
             var dm2 = dm.Descendants(ns + "FCDA").Select(x => new dm()
             {
-                address = x.Attribute("lnClass").Value + "$" +  x.Attribute("fc").Value + "$" + x.Attribute("doName").Value
+                address = x.Attribute("lnClass").Value + "$" +  x.Attribute("fc").Value + "$" + x.Attribute("doName").Value + (x.Attribute("daName") != null ? "$" + x.Attribute("daName").Value : "")
             }).ToList();
 
             foreach (var d in dm)
