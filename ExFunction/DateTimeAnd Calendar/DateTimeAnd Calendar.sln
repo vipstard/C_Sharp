@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimeAnd Calendar", "DateTimeAnd Calendar\DateTimeAnd Calendar.csproj", "{4C20AB1A-BA84-4939-A0A0-8218B1F0DC60}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C20AB1A-BA84-4939-A0A0-8218B1F0DC60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C20AB1A-BA84-4939-A0A0-8218B1F0DC60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C20AB1A-BA84-4939-A0A0-8218B1F0DC60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C20AB1A-BA84-4939-A0A0-8218B1F0DC60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6C67D130-717B-4CE9-A97F-376AA1A89CEE}
+	EndGlobalSection
+EndGlobal
