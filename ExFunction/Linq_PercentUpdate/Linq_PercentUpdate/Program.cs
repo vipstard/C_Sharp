@@ -22,3 +22,29 @@
 //catch (SqlException /*e*/)
 //{
 //}
+
+
+// SQLITE 사용 Nuget - System.Data.SQLite(1.0.117)
+//public void deleteLastRecordsGooseEvent(int percent)
+//{
+//    try
+//    {
+//        using (SQLiteConnection sqlConnection = new SQLiteConnection(@"Data Source=.."))
+//        {
+//            string sql = $"DELETE From goose_event  WHERE rowid In (Select rowid from goose_event Limit (Select Round(COUNT(*) * {percent} / 100) from goose_event))";
+
+//            using (SQLiteCommand sqlCmd = new SQLiteCommand(sql, sqlConnection))
+//            {
+//                sqlCmd.Connection = sqlConnection;
+//                sqlConnection.Open();
+//                sqlCmd.ExecuteNonQuery();
+//            }
+
+//        }
+//    }
+
+//    catch (SqlException /*e*/)
+//    {
+//    }
+//}
+
