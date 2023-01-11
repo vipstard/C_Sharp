@@ -9,10 +9,14 @@
 
   <ItemGroup>
     <Compile Remove="DisTinct.cs" />
+    <Compile Remove="Index.cs" />
+    <Compile Remove="Select.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="DisTinct.cs" />
+    <None Include="Index.cs" />
+    <None Include="Select.cs" />
   </ItemGroup>
 
 </Project>
