@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ThreadClass1.cs" />
+    <Compile Remove="ThreadClass2.cs" />
+    <Compile Remove="ThreadPoolTest.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="ThreadClass1.cs" />
+    <None Include="ThreadClass2.cs" />
+    <None Include="ThreadPoolTest.cs" />
+  </ItemGroup>
+
+</Project>
