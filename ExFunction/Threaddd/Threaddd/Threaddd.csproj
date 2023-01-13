@@ -10,6 +10,11 @@
   <ItemGroup>
     <Compile Remove="AsynchronousDelegate.cs" />
     <Compile Remove="BackgroundWorker_.cs" />
+    <Compile Remove="MultiThrdApp.cs" />
+    <Compile Remove="ParallelProgramming1.cs" />
+    <Compile Remove="ParallelProgramming2.cs" />
+    <Compile Remove="Task_.cs" />
+    <Compile Remove="Task_T.cs" />
     <Compile Remove="ThreadClass1.cs" />
     <Compile Remove="ThreadClass2.cs" />
     <Compile Remove="ThreadPoolTest.cs" />
@@ -18,6 +23,11 @@
   <ItemGroup>
     <None Include="AsynchronousDelegate.cs" />
     <None Include="BackgroundWorker_.cs" />
+    <None Include="MultiThrdApp.cs" />
+    <None Include="ParallelProgramming1.cs" />
+    <None Include="ParallelProgramming2.cs" />
+    <None Include="Task_.cs" />
+    <None Include="Task_T.cs" />
     <None Include="ThreadClass1.cs" />
     <None Include="ThreadClass2.cs" />
     <None Include="ThreadPoolTest.cs" />
