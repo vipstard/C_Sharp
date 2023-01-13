@@ -12,7 +12,7 @@ namespace Threaddd
         {
             // Func의 처음 2개 int => 입력 ,마지막 int  => 출력
             Func<int, int, int> work = GetArea;
-
+             
             IAsyncResult asyncResult = work.BeginInvoke(10, 20, null, null);
 
             Console.WriteLine("Do Something in Main Thread");
