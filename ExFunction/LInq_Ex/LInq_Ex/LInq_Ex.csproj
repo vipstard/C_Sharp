@@ -8,14 +8,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="AllAny.cs" />
     <Compile Remove="DisTinct.cs" />
     <Compile Remove="Index.cs" />
+    <Compile Remove="OfType%28%29.cs" />
+    <Compile Remove="OrderByThenBy.cs" />
     <Compile Remove="Select.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="AllAny.cs" />
     <None Include="DisTinct.cs" />
     <None Include="Index.cs" />
+    <None Include="OfType().cs" />
+    <None Include="OrderByThenBy.cs" />
     <None Include="Select.cs" />
   </ItemGroup>
 

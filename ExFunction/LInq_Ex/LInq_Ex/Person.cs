@@ -9,21 +9,21 @@ namespace LInq_Ex
     public class Person
     {
         public String Name { get; set; }
-        public int age { get; set; }
+        public int Age { get; set; }
 
         public override string ToString()
         {
-            return "Name : " +   Name +  ",  Age : " +  age;
+            return "Name : " +   Name +  ",  Age : " + Age;
         }
 
         public Person()
         {
             
         }
-        public Person(string name, int age)
+        public Person(string name, int Age)
         {
             Name = name;
-            this.age = age;
+            this.Age = Age;
         }
 
     }
