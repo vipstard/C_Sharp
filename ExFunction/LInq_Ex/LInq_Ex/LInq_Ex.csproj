@@ -10,18 +10,24 @@
   <ItemGroup>
     <Compile Remove="AllAny.cs" />
     <Compile Remove="DisTinct.cs" />
+    <Compile Remove="Eempty.cs" />
+    <Compile Remove="GroupBy.cs" />
     <Compile Remove="Index.cs" />
     <Compile Remove="OfType%28%29.cs" />
     <Compile Remove="OrderByThenBy.cs" />
+    <Compile Remove="RangeRepeat.cs" />
     <Compile Remove="Select.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="AllAny.cs" />
     <None Include="DisTinct.cs" />
+    <None Include="Eempty.cs" />
+    <None Include="GroupBy.cs" />
     <None Include="Index.cs" />
     <None Include="OfType().cs" />
     <None Include="OrderByThenBy.cs" />
+    <None Include="RangeRepeat.cs" />
     <None Include="Select.cs" />
   </ItemGroup>
 
