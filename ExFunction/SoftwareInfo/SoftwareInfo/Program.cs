@@ -9,38 +9,70 @@ namespace SoftwareInfo
         {
             String[] strArr = 
             {"nms4sa_service", "EliveCap", "EMMS4SARunTime", "EmmsParse", 
-                "goose_mon", "mms_mon", "SNMP_MON", "dnp_mon", "sntp_mon"};
-            ;
-            Process[] processs = Process.GetProcesses();
+                "goose_mon", "mms_mon", "SNMP_MON"};
+            List<double> cpuLIst = new List<double>();
+            
             
 
             while(true){
-                Console.WriteLine("PID\t프로세스이름\t 메모리사용량(K)");
+                Process[] processs = Process.GetProcesses();
+                // 프로세스 동작여부
+                Console.WriteLine("PID\t프로세스이름\t동작상태(K)");
                 Console.WriteLine("=========================================================");
-                
-                foreach (Process p in processs)
+                foreach (var p in processs)
                 {
-                    
-
                     foreach (var processName in strArr)
                     {
-                        PerformanceCounter total_cpu = new PerformanceCounter("Process", "% Processor Time", "_Total");
-                        
-                        var cpuCounter = new PerformanceCounter("Process", "% Processor Time", processName);
                         if (processName == p.ProcessName)
                         {
-                            PerformanceCounter ram = new PerformanceCounter("Process", "Working Set - Private", processName);
+                            Console.WriteLine(p.Id + "\t" + p.ProcessName +(p.ProcessName=="mms_mon"?"\t":"")+ "\t" + (p.Responding?"정상":"이상"));
 
-                            Debug.WriteLine(p.Id + " " + p.ProcessName + " " + p.MainWindowTitle);
-                            Console.WriteLine(p.Id + "\t" + p.ProcessName + "\t" + p.MainWindowTitle + "\t" +
-                                              string.Format("{0:##,##}", p.WorkingSet64 / 1024) + "K" + " "  );
-                            //((cpuCounter.NextValue() / ((Environment.ProcessorCount) * total_cpu.NextValue())) * 100) + "%");
+
                         }
-                    }
 
+                    }
                 }
-                Thread.Sleep(5000);
-                Console.WriteLine("\n");
+                Thread.Sleep(3000);
+                Console.WriteLine();
+
+
+                ////프로세스 CPU 점유율 구하기
+                //Console.WriteLine("프로세스이름\t CPU사용량(K)");
+                //Console.WriteLine("=========================================================");
+                //Parallel.For(0, 7, (i) =>
+                //{
+                //    var cpuCounter = new PerformanceCounter("Process", "% Processor Time", strArr[i]);
+                //    if (cpuCounter != null) { 
+                //        cpuCounter.NextValue();
+                //        Thread.Sleep(3000);
+                //        double value =Math.Round(cpuCounter.NextValue() / 10,1) ;
+                //        Console.WriteLine(strArr[i] +"\t"+value);
+                //    }
+                //});
+                //Console.WriteLine();
+
+
+                //// 프로세스 메모리 사용량 구하기
+                //Console.WriteLine();
+                //Console.WriteLine("PID\t프로세스이름\t 메모리사용량(K)");
+                //Console.WriteLine("=========================================================");
+                //foreach (Process p in processs)
+                //{
+                //    foreach (var processName in strArr)
+                //    {
+                //        if (processName == p.ProcessName)
+                //        {
+                //            PerformanceCounter ram = new PerformanceCounter("Process", "Working Set - Private", processName);
+
+                //            Debug.WriteLine(p.Id + " " + p.ProcessName + " " + p.MainWindowTitle);
+                //            Console.WriteLine(p.Id + "\t" + p.ProcessName + "\t" + p.MainWindowTitle + "\t" +
+                //                              string.Format("{0:##,##}", p.WorkingSet64 / 1024) + "K");
+                //        }
+                //    }
+
+                //}
+                //Thread.Sleep(3000);
+                //Console.WriteLine("\n");
 
             }
 
