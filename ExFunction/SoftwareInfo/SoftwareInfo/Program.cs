@@ -16,40 +16,43 @@ namespace SoftwareInfo
 
             while(true){
                 Process[] processs = Process.GetProcesses();
-                // 프로세스 동작여부
-                Console.WriteLine("PID\t프로세스이름\t동작상태(K)");
-                Console.WriteLine("=========================================================");
-                foreach (var p in processs)
-                {
-                    foreach (var processName in strArr)
-                    {
-                        if (processName == p.ProcessName)
-                        {
-                            Console.WriteLine(p.Id + "\t" + p.ProcessName +(p.ProcessName=="mms_mon"?"\t":"")+ "\t" + (p.Responding?"정상":"이상"));
 
 
-                        }
-
-                    }
-                }
-                Thread.Sleep(3000);
-                Console.WriteLine();
-
-
-                ////프로세스 CPU 점유율 구하기
-                //Console.WriteLine("프로세스이름\t CPU사용량(K)");
+                //// 프로세스 동작여부
+                //Console.WriteLine("PID\t프로세스이름\t동작상태(K)");
                 //Console.WriteLine("=========================================================");
-                //Parallel.For(0, 7, (i) =>
+                //foreach (var p in processs)
                 //{
-                //    var cpuCounter = new PerformanceCounter("Process", "% Processor Time", strArr[i]);
-                //    if (cpuCounter != null) { 
-                //        cpuCounter.NextValue();
-                //        Thread.Sleep(3000);
-                //        double value =Math.Round(cpuCounter.NextValue() / 10,1) ;
-                //        Console.WriteLine(strArr[i] +"\t"+value);
+                //    foreach (var processName in strArr)
+                //    {
+                //        if (processName == p.ProcessName)
+                //        {
+                //            Console.WriteLine(p.Id + "\t" + p.ProcessName +(p.ProcessName=="mms_mon"?"\t":"")+ "\t" + (p.Responding?"정상":"이상"));
+
+
+                //        }
+
                 //    }
-                //});
+                //}
+                //Thread.Sleep(3000);
                 //Console.WriteLine();
+
+
+                //프로세스 CPU 점유율 구하기
+                Console.WriteLine("프로세스이름\t CPU사용량(%)");
+                Console.WriteLine("=========================================================");
+                Parallel.For(0, 7, (i) =>
+                {
+                    var cpuCounter = new PerformanceCounter("Process", "% Processor Time", strArr[i]);
+                    if (cpuCounter != null)
+                    {
+                        cpuCounter.NextValue();
+                        //Thread.Sleep(1500);
+                        double value = Math.Round(cpuCounter.NextValue() / 10, 1);
+                        Console.WriteLine(strArr[i] + "\t" + value);
+                    }
+                });
+                Console.WriteLine();
 
 
                 //// 프로세스 메모리 사용량 구하기
@@ -65,8 +68,8 @@ namespace SoftwareInfo
                 //            PerformanceCounter ram = new PerformanceCounter("Process", "Working Set - Private", processName);
 
                 //            Debug.WriteLine(p.Id + " " + p.ProcessName + " " + p.MainWindowTitle);
-                //            Console.WriteLine(p.Id + "\t" + p.ProcessName + "\t" + p.MainWindowTitle + "\t" +
-                //                              string.Format("{0:##,##}", p.WorkingSet64 / 1024) + "K");
+                //            Console.WriteLine(p.Id + "\t" + p.ProcessName  + "\t" +
+                //                              string.Format("{0:##,##}", ram.RawValue / 1024) + "K");
                 //        }
                 //    }
 
