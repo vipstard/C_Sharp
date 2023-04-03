@@ -10,9 +10,11 @@ namespace DateTime
 
             String timeStamp1 = "2023-03-30 18:52:54.745";
             System.DateTime time = System.DateTime.Parse(timeStamp1);
-            string outputTime = time.ToString("yyyy-MM-dd tt h:mm:ss");
+            string outputTime1 = time.ToString("yyyy-MM-dd tt h:mm:ss");
+            string outputTime2 = time.ToString("yyyy-MM-dd HH:mm:ss"); // 24시간 형식으로 포맷
 
-            Console.WriteLine(outputTime);
+            Console.WriteLine(outputTime1);
+            Console.WriteLine(outputTime2);
 
 
 
