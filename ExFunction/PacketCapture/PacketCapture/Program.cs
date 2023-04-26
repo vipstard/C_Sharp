@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Collections.Concurrent;
 using System.IO;
+using System.Linq;
+using System.Threading;
 using PacketCapture;
 using PacketDotNet;
 using SharpPcap;
@@ -8,6 +11,7 @@ using SharpPcap.LibPcap;
 public class Program
 {
 	static readonly object fileLock = new object();
+	static ConcurrentQueue<RawCapture> packetQueue = new ConcurrentQueue<RawCapture>();
 	static DateTime nextCaptureTime = DateTime.MinValue;
 	static CaptureFileWriterDevice pcapWriter;
 
@@ -51,39 +55,50 @@ public class Program
 		device.OnPacketArrival += new PacketArrivalEventHandler(device_OnPacketArrival);
 
 		device.StartCapture();
+
+		while (packetQueue.Count > 0 || device.Started)
+		{
+			if (packetQueue.TryDequeue(out RawCapture rawPacket))
+			{
+				Console.WriteLine("TryDequeue");
+				var packet = Packet.ParsePacket(rawPacket.LinkLayerType, rawPacket.Data);
+
+				DateTime now = DateTime.Now;
+				lock (fileLock)
+				{
+					if (pcapWriter == null)
+					{
+						// Create a new file for writing packets
+						var fileName = Path.Combine("D:\\TEST", $"captured_{TimeZoneInfo.ConvertTimeToUtc(now)}.pcap");
+						pcapWriter = new CaptureFileWriterDevice(fileName);
+						pcapWriter.Open();
+					}
+
+					// Write the packet to the pcap file
+					pcapWriter.Write(rawPacket);
+
+					if (DateTime.Now >= nextCaptureTime)
+					{
+						// Close the current file and create a new one
+						pcapWriter.Close();
+						var fileName = Path.Combine("D:\\TEST", $"captured_{TimeZoneInfo.ConvertTimeToUtc(now)}.pcap");
+						pcapWriter = new CaptureFileWriterDevice(fileName);
+						pcapWriter.Open();
+
+						// Set the next capture time
+						nextCaptureTime = DateTime.Now.AddMinutes(1);
+					}
+				}
+			}
+		}
 	}
 
 	static void device_OnPacketArrival(object sender, SharpPcap.PacketCapture e)
 	{
-		lock (fileLock)
+		if (((ICaptureDevice)sender).Started)
 		{
-			if (pcapWriter == null)
-			{
-				// Create a new file for writing packets
-				var fileName = Path.Combine("D:\\", $"captured_{DateTime.Now:yyyy-MM-dd-HH-mm-ss}.pcap");
-				pcapWriter = new CaptureFileWriterDevice(fileName);
-				pcapWriter.Open();
-			}
-
-			var rawPacket = e.GetPacket();
-			var packet = Packet.ParsePacket(rawPacket.LinkLayerType, rawPacket.Data);
-
-			// Write the packet to the pcap file
-			pcapWriter.Write(rawPacket);
-
-			if (DateTime.Now >= nextCaptureTime)
-			{
-				// Close the current file and create a new one
-				pcapWriter.Close();
-				var fileName = Path.Combine("D:\\", $"captured_{DateTime.Now:yyyy-MM-dd-HH-mm-ss}.pcap");
-				pcapWriter = new CaptureFileWriterDevice(fileName);
-				pcapWriter.Open();
-
-				// Set the next capture time
-				nextCaptureTime = DateTime.Now.AddMinutes(1);
-			}
+			Console.WriteLine("Enqueue");
+			packetQueue.Enqueue(e.GetPacket());
 		}
 	}
 }
-
-
