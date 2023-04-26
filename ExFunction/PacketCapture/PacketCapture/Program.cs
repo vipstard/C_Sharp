@@ -10,6 +10,7 @@ using SharpPcap.LibPcap;
 
 public class Program
 {
+	const int maxFileSize = 10000 * 1024;
 	static readonly object fileLock = new object();
 	static ConcurrentQueue<RawCapture> packetQueue = new ConcurrentQueue<RawCapture>();
 	static DateTime nextCaptureTime = DateTime.MinValue;
@@ -52,6 +53,7 @@ public class Program
 
 	static void CapturePackets(ICaptureDevice device)
 	{
+		long packetLength = 0;
 		device.OnPacketArrival += new PacketArrivalEventHandler(device_OnPacketArrival);
 
 		device.StartCapture();
@@ -62,18 +64,24 @@ public class Program
 			{
 				Console.WriteLine("TryDequeue");
 				var packet = Packet.ParsePacket(rawPacket.LinkLayerType, rawPacket.Data);
-				//
+				
+				// 패킷 byte 크기
+				packetLength += rawPacket.Data.Length; 
+
+				// UnixTimestamp 시간 변환
 				DateTime now = DateTime.UtcNow;
 				long unixTimestampTicks = now.Ticks - DateTimeOffset.UnixEpoch.Ticks;
 				double unixTimestampMicroseconds = (double)unixTimestampTicks / TimeSpan.TicksPerMillisecond / 1000;
 				var timstamp = unixTimestampMicroseconds.ToString().Split(".");
 
+				
 				lock (fileLock)
 				{
 					if (pcapWriter == null)
 					{
 						// Create a new file for writing packets
-						var fileName = Path.Combine("D:\\TEST", $"{unixTimestampMicroseconds}.pcap");
+						var fileName = Path.Combine("D:\\TEST", $"{timstamp[0]}-{timstamp[1]}.pcap");
+						Console.WriteLine($"@@@@ {timstamp[0]}-{timstamp[1]}.pcap Save @@@@@@");
 						pcapWriter = new CaptureFileWriterDevice(fileName);
 						pcapWriter.Open();
 					}
@@ -81,16 +89,19 @@ public class Program
 					// Write the packet to the pcap file
 					pcapWriter.Write(rawPacket);
 
-					if (now >= nextCaptureTime)
+					if (packetLength >= maxFileSize/*now >= nextCaptureTime*/)
 					{
 						// Close the current file and create a new one
 						pcapWriter.Close();
-						var fileName = Path.Combine("D:\\TEST", $"{unixTimestampMicroseconds}.pcap");
+						packetLength = 0;
+						Console.WriteLine($"@@@@ {timstamp[0]}-{timstamp[1]}.pcap Save @@@@@@");
+
+						var fileName = Path.Combine("D:\\TEST", $"{timstamp[0]}-{timstamp[1]}.pcap");
 						pcapWriter = new CaptureFileWriterDevice(fileName);
 						pcapWriter.Open();
 
 						// Set the next capture time
-						nextCaptureTime = now.AddMinutes(1);
+						//nextCaptureTime = now.AddMinutes(1);
 					}
 				}
 			}
