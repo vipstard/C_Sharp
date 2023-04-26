@@ -63,13 +63,17 @@ public class Program
 				Console.WriteLine("TryDequeue");
 				var packet = Packet.ParsePacket(rawPacket.LinkLayerType, rawPacket.Data);
 				//
-				DateTime now = DateTime.Now;
+				DateTime now = DateTime.UtcNow;
+				long unixTimestampTicks = now.Ticks - DateTimeOffset.UnixEpoch.Ticks;
+				double unixTimestampMicroseconds = (double)unixTimestampTicks / TimeSpan.TicksPerMillisecond / 1000;
+				var timstamp = unixTimestampMicroseconds.ToString().Split(".");
+
 				lock (fileLock)
 				{
 					if (pcapWriter == null)
 					{
 						// Create a new file for writing packets
-						var fileName = Path.Combine("D:\\TEST", $"captured_{TimeZoneInfo.ConvertTimeToUtc(now)}.pcap");
+						var fileName = Path.Combine("D:\\TEST", $"{unixTimestampMicroseconds}.pcap");
 						pcapWriter = new CaptureFileWriterDevice(fileName);
 						pcapWriter.Open();
 					}
@@ -77,16 +81,16 @@ public class Program
 					// Write the packet to the pcap file
 					pcapWriter.Write(rawPacket);
 
-					if (DateTime.Now >= nextCaptureTime)
+					if (now >= nextCaptureTime)
 					{
 						// Close the current file and create a new one
 						pcapWriter.Close();
-						var fileName = Path.Combine("D:\\TEST", $"captured_{TimeZoneInfo.ConvertTimeToUtc(now)}.pcap");
+						var fileName = Path.Combine("D:\\TEST", $"{unixTimestampMicroseconds}.pcap");
 						pcapWriter = new CaptureFileWriterDevice(fileName);
 						pcapWriter.Open();
 
 						// Set the next capture time
-						nextCaptureTime = DateTime.Now.AddMinutes(1);
+						nextCaptureTime = now.AddMinutes(1);
 					}
 				}
 			}
