@@ -10,7 +10,6 @@ using SharpPcap.LibPcap;
 
 public class Program
 {
-	const int maxFileSize = 10000 * 1024;
 	static readonly object fileLock = new object();
 	static ConcurrentQueue<RawCapture> packetQueue = new ConcurrentQueue<RawCapture>();
 	static DateTime nextCaptureTime = DateTime.MinValue;
@@ -19,12 +18,16 @@ public class Program
 	static void Main(string[] args)
 	{
 		DbManager dbManager = new DbManager();
+		int storageCapacity = dbManager.GetStorageCapacity();
+
+		long maxFileSize =  storageCapacity * 1024 * 1024;
+
 		// Get the device list
 		var devices = CaptureDeviceList.Instance;
 
 		// Select the device you want to capture packets from
-		// NIC Enable 이름 찾아서 그 패킷만 가져온다.
-		// 1분 단위로 패킷 캡쳐한 후 D드라이브에 파일로 저장하는 예제
+		// NIC Enable 이름 찾아서 그 패킷만 캡쳐.
+		// 저장용량 단위(MB) 로 패킷 캡쳐한 후 D드라이브에 파일로 저장하는 예제
 		var selectedDevice = devices.FirstOrDefault(d => d.Name == dbManager.GetNIC());
 
 		if (selectedDevice == null)
@@ -40,7 +43,7 @@ public class Program
 		selectedDevice.Filter = "";
 
 		// Create a capture thread
-		var captureThread = new Thread(() => CapturePackets(selectedDevice));
+		var captureThread = new Thread(() => CapturePackets(selectedDevice, maxFileSize));
 		captureThread.Start();
 
 		Console.WriteLine("Press Enter to stop the capture...");
@@ -51,7 +54,7 @@ public class Program
 		selectedDevice.Close();
 	}
 
-	static void CapturePackets(ICaptureDevice device)
+	static void CapturePackets(ICaptureDevice device, long maxFileSize)
 	{
 		long packetLength = 0;
 		device.OnPacketArrival += new PacketArrivalEventHandler(device_OnPacketArrival);
@@ -65,7 +68,7 @@ public class Program
 				Console.WriteLine("TryDequeue");
 				var packet = Packet.ParsePacket(rawPacket.LinkLayerType, rawPacket.Data);
 				
-				// 패킷 byte 크기
+				// 패킷 byte 크기 
 				packetLength += rawPacket.Data.Length; 
 
 				// UnixTimestamp 시간 변환
@@ -74,8 +77,6 @@ public class Program
 				double unixTimestampMicroseconds = (double)unixTimestampTicks / TimeSpan.TicksPerMillisecond / 1000;
 				var timestamp = unixTimestampMicroseconds.ToString().Split(".");
 				
-
-
 				lock (fileLock)
 				{
 					if (pcapWriter == null)
