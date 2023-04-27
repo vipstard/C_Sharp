@@ -69,19 +69,20 @@ public class Program
 				packetLength += rawPacket.Data.Length; 
 
 				// UnixTimestamp 시간 변환
-				DateTime now = DateTime.UtcNow;
-				long unixTimestampTicks = now.Ticks - DateTimeOffset.UnixEpoch.Ticks;
+				DateTime packetTime = rawPacket.Timeval.Date;
+				long unixTimestampTicks = packetTime.Ticks - DateTimeOffset.UnixEpoch.Ticks;
 				double unixTimestampMicroseconds = (double)unixTimestampTicks / TimeSpan.TicksPerMillisecond / 1000;
-				var timstamp = unixTimestampMicroseconds.ToString().Split(".");
-
+				var timestamp = unixTimestampMicroseconds.ToString().Split(".");
 				
+
+
 				lock (fileLock)
 				{
 					if (pcapWriter == null)
 					{
 						// Create a new file for writing packets
-						var fileName = Path.Combine("D:\\TEST", $"{timstamp[0]}-{timstamp[1]}.pcap");
-						Console.WriteLine($"@@@@ {timstamp[0]}-{timstamp[1]}.pcap Save @@@@@@");
+						var fileName = Path.Combine("D:\\TEST", $"{timestamp[0]}-{timestamp[1].Substring(0,6)}.pcap");
+						Console.WriteLine($"@@@@ {fileName} Save @@@@@@");
 						pcapWriter = new CaptureFileWriterDevice(fileName);
 						pcapWriter.Open();
 					}
@@ -89,19 +90,18 @@ public class Program
 					// Write the packet to the pcap file
 					pcapWriter.Write(rawPacket);
 
-					if (packetLength >= maxFileSize/*now >= nextCaptureTime*/)
+					if (packetLength >= maxFileSize)
 					{
 						// Close the current file and create a new one
 						pcapWriter.Close();
 						packetLength = 0;
-						Console.WriteLine($"@@@@ {timstamp[0]}-{timstamp[1]}.pcap Save @@@@@@");
+						Console.WriteLine($"@@@@ {pcapWriter.Name} closed. @@@@@@");
 
-						var fileName = Path.Combine("D:\\TEST", $"{timstamp[0]}-{timstamp[1]}.pcap");
+						// Create a new file for writing packets
+						var fileName = Path.Combine("D:\\TEST", $"{timestamp[0]}-{timestamp[1].Substring(0, 6)}.pcap");
+						Console.WriteLine($"@@@@ {fileName} Save @@@@@@");
 						pcapWriter = new CaptureFileWriterDevice(fileName);
 						pcapWriter.Open();
-
-						// Set the next capture time
-						//nextCaptureTime = now.AddMinutes(1);
 					}
 				}
 			}
