@@ -12,23 +12,21 @@ public class Program
 {
 	static readonly object fileLock = new object();
 	static ConcurrentQueue<RawCapture> packetQueue = new ConcurrentQueue<RawCapture>();
-	static DateTime nextCaptureTime = DateTime.MinValue;
 	static CaptureFileWriterDevice pcapWriter;
 
 	static void Main(string[] args)
 	{
 		DbManager dbManager = new DbManager();
-		int storageCapacity = dbManager.GetStorageCapacity();
 
-		long maxFileSize =  storageCapacity * 1024 * 1024;
+		long maxFileSize = GetMaxFileSize();
 
 		// Get the device list
-		var devices = CaptureDeviceList.Instance;
+		CaptureDeviceList devices = CaptureDeviceList.Instance;
 
 		// Select the device you want to capture packets from
 		// NIC Enable 이름 찾아서 그 패킷만 캡쳐.
 		// 저장용량 단위(MB) 로 패킷 캡쳐한 후 D드라이브에 파일로 저장하는 예제
-		var selectedDevice = devices.FirstOrDefault(d => d.Name == dbManager.GetNIC());
+		ILiveDevice selectedDevice = devices.FirstOrDefault(d => d.Name == dbManager.GetNIC());
 
 		if (selectedDevice == null)
 		{
@@ -66,23 +64,19 @@ public class Program
 			if (packetQueue.TryDequeue(out RawCapture rawPacket))
 			{
 				Console.WriteLine("TryDequeue");
-				var packet = Packet.ParsePacket(rawPacket.LinkLayerType, rawPacket.Data);
+				Packet packet = Packet.ParsePacket(rawPacket.LinkLayerType, rawPacket.Data);
 				
 				// 패킷 byte 크기 
-				packetLength += rawPacket.Data.Length; 
+				packetLength += rawPacket.Data.Length;
 
-				// UnixTimestamp 시간 변환
-				DateTime packetTime = rawPacket.Timeval.Date;
-				long unixTimestampTicks = packetTime.Ticks - DateTimeOffset.UnixEpoch.Ticks;
-				double unixTimestampMicroseconds = (double)unixTimestampTicks / TimeSpan.TicksPerMillisecond / 1000;
-				var timestamp = unixTimestampMicroseconds.ToString().Split(".");
-				
+				string[] timestamp = ConvertUnixTimestamp(rawPacket);
+				string fileName = GetFileName(timestamp);
+
 				lock (fileLock)
 				{
 					if (pcapWriter == null)
 					{
 						// Create a new file for writing packets
-						var fileName = Path.Combine("D:\\TEST", $"{timestamp[0]}-{timestamp[1].Substring(0,6)}.pcap");
 						Console.WriteLine($"@@@@ {fileName} Save @@@@@@");
 						pcapWriter = new CaptureFileWriterDevice(fileName);
 						pcapWriter.Open();
@@ -99,7 +93,6 @@ public class Program
 						Console.WriteLine($"@@@@ {pcapWriter.Name} closed. @@@@@@");
 
 						// Create a new file for writing packets
-						var fileName = Path.Combine("D:\\TEST", $"{timestamp[0]}-{timestamp[1].Substring(0, 6)}.pcap");
 						Console.WriteLine($"@@@@ {fileName} Save @@@@@@");
 						pcapWriter = new CaptureFileWriterDevice(fileName);
 						pcapWriter.Open();
@@ -107,6 +100,32 @@ public class Program
 				}
 			}
 		}
+	}
+
+	static string GetFileName(string[] timeStamp)
+	{
+		var fileName = Path.Combine("D:\\TEST", $"{timeStamp[0]}-{timeStamp[1]}.pcap");
+		return fileName;
+	}
+
+	static string[] ConvertUnixTimestamp(RawCapture rawPacket)
+	{
+		// UnixTimestamp 시간 변환
+		DateTime packetTime = rawPacket.Timeval.Date;
+		long unixTimestampTicks = packetTime.Ticks - DateTimeOffset.UnixEpoch.Ticks;
+		double unixTimestampMicroseconds = (double)unixTimestampTicks / TimeSpan.TicksPerMillisecond / 1000;
+		var timestamp = unixTimestampMicroseconds.ToString().Split(".");
+
+		// 소수점 뒤 숫자 개수가 6개 이상인 경우 6개까지만 출력 6자리 미만인 경우 그대로 반환
+		timestamp[1] = timestamp[1].Length < 6 ? timestamp[1] : timestamp[1].Substring(0, 6); 
+
+		return timestamp;
+	}
+
+	static long GetMaxFileSize()
+	{
+		DbManager dbManager = new DbManager();
+		return dbManager.GetStorageCapacity() * 1024 * 1024; 
 	}
 
 	static void device_OnPacketArrival(object sender, SharpPcap.PacketCapture e)
