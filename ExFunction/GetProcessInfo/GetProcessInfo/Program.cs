@@ -8,9 +8,7 @@ namespace GetProcessInfo
 	{
 		static void Main(string[] args)
 		{
-			string Path = @"C:\nms4sa\PacketCap_DNP.exe";
 			RestartService();
-			Process.Start(Path);
 		}
 
 		/// <summary>
