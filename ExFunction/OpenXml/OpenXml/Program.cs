@@ -6,7 +6,7 @@ using OpenXml;
 public class Program{
 	public static void Main(string[] args)
 	{
-		string filePath = "C:\\TESTIET\\P6271_BF_192.168.1.103.xlsx";
+		string filePath = "C:\\TESTIET\\";
 		List<IET> dataList = ReadExcelData(filePath);
 
 		foreach (var iet in dataList)
