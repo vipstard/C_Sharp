@@ -6,8 +6,8 @@ using OpenXml;
 public class Program{
 	public static void Main(string[] args)
 	{
-		string filePath = "C:\\TESTIET\\";
-		List<IET> dataList = ReadExcelData(filePath);
+		string filePath = "C:\\TESTIET\\P6272_BF_192.168.1.104.xlsx";
+		List<IET> dataList = ReadGooseSheet(filePath);
 
 		foreach (var iet in dataList)
 		{
@@ -17,7 +17,7 @@ public class Program{
 	}
 
 
-	public static List<IET> ReadExcelData(string filePath)
+	public static List<IET> ReadGooseSheet(string filePath)
 	{
 		List<IET> dataList = new List<IET>();
 
@@ -122,7 +122,7 @@ public class Program{
 
 				string tempDescriptionValue1 = GetCellValue(ReturnCell(row, colIndex[0]), sharedStrings);
 				string tempDescriptionValue2 = GetCellValue(ReturnCell(row, colIndex[0] + 1), sharedStrings);
-				string descriptionValue =  tempDescriptionValue1 + tempDescriptionValue2;
+				string descriptionValue =  tempDescriptionValue1 +" "+ tempDescriptionValue2;
 				string dataTypeValue = GetCellValue(ReturnCell(row, colIndex[1]), sharedStrings);
 				string pdTypeValue = GetCellValue(ReturnCell(row, colIndex[2]), sharedStrings);
 				string ldTypeValue = GetCellValue(ReturnCell(row, colIndex[3]), sharedStrings);
@@ -183,7 +183,7 @@ public class Program{
 
 		if (cell.DataType == null)
 		{
-			return cell.InnerText.Trim();
+			return "";
 		}
 
 		switch (cell.DataType.Value)
@@ -198,7 +198,7 @@ public class Program{
 				return cell.InnerText.Trim();
 
 			case CellValues.String:
-				return cell.InnerText.Trim();
+				return cell.CellValue.InnerText.Trim();
 
 			case CellValues.Date:
 				return DateTime.FromOADate(double.Parse(cell.InnerText)).ToString();
