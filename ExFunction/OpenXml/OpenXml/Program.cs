@@ -8,7 +8,7 @@ public class Program{
 	public static void Main(string[] args)
 	{
 		ReadSheet rs = new ReadSheet();
-		string filePath = "C:\\TESTIET\\IET_D000_C437.xlsx";
+		string filePath = "C:\\TESTIET\\.xlsx";
 
 		List<IET> gooseDataList = rs.ReadGooseSheet(filePath);
 		List<IET_MMS> mmsDataList = rs.ReadMmsSheet(filePath);
