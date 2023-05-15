@@ -8,7 +8,7 @@ public class Program{
 	public static void Main(string[] args)
 	{
 		ReadSheet rs = new ReadSheet();
-		string filePath = "C:\\TESTIET\\.xlsx";
+		string filePath = "C:\\TESTIET\\P6200_BF_192.168.1.102.xlsx";
 
 		List<IET> gooseDataList = rs.ReadGooseSheet(filePath);
 		List<IET_MMS> mmsDataList = rs.ReadMmsSheet(filePath);
@@ -22,9 +22,8 @@ public class Program{
 		Console.WriteLine("=======Mms=========");
 		foreach (var iet in mmsDataList)
 		{
-			Console.WriteLine($"{cnt} {iet.Description}  {iet.Address} {iet.DataType}");
-			cnt++;
-		}
+			Console.WriteLine($"{iet.Description}  {iet.Address} {iet.DataType}");
+        }
 	}
 }
 

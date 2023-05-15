@@ -223,7 +223,7 @@ namespace OpenXml
 
 					// 행 반복
 					foreach (Row row in worksheetPart.Worksheet.Descendants<Row>()
-								 .SkipWhile(r => r.RowIndex < dataStartRow.RowIndex).Skip(5))
+								 .SkipWhile(r => r.RowIndex < dataStartRow.RowIndex).Skip(4))
 					{
 						#region Cell 값 받아오기
 

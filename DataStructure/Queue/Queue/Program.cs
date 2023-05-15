@@ -27,7 +27,7 @@ namespace Queue
 				int n = 0;
 				int result;
 				while (n < 100)
-				{
+				{ 
 					if (q.TryDequeue(out result))
 					{
 						Console.WriteLine(result);
