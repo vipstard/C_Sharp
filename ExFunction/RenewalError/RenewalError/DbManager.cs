@@ -19,9 +19,10 @@ namespace RenewalError
             using (var conn = new SQLiteConnection(_mrConn))
             {
                 conn.Open();
+                Console.WriteLine($"mtime : {_mmsLastTimestamp}");
 
                 // 마지막으로 검색한 데이터의 타임스탬프 이후로 추가된 데이터만 선택
-                string query = "SELECT * FROM MMS_EVENT WHERE STATUS = 7 AND EXTRA_INFO = 2";
+                string query = "SELECT * FROM MMS_EVENT WHERE ((STATUS = 7 AND EXTRA_INFO = 2) OR STATUS = 5)";
                 if (!string.IsNullOrEmpty(_mmsLastTimestamp))
                 {
                     query += $" AND timestamp > '{_mmsLastTimestamp}'";
@@ -56,7 +57,7 @@ namespace RenewalError
                 } //using cmd
             } //using conn
 
-            Console.WriteLine($"mtime : {_mmsLastTimestamp}");
+          
             return eventList;
         }
 
@@ -66,6 +67,7 @@ namespace RenewalError
             using (var conn = new SQLiteConnection(_grConn))
             {
                 conn.Open();
+                Console.WriteLine($"gtime now : {_gooseLastTimestamp}");
 
                 // 마지막으로 검색한 데이터의 타임스탬프 이후로 추가된 데이터만 선택
                 string query = "SELECT * FROM GOOSE_EVENT WHERE STATUS = 2";
@@ -104,7 +106,7 @@ namespace RenewalError
                     } //using reader
                 } //using cmd
             } //using conn
-            Console.WriteLine($"gtime : {_gooseLastTimestamp}");
+            Console.WriteLine($"gtime Last : {_gooseLastTimestamp}");
             return gooseEventList;
         }
 
@@ -218,26 +220,6 @@ namespace RenewalError
                     }
                 } //using cmd
             } //using conn
-        }
-
-
-        private void SecToDateTime(List<GooseEvent> list)
-        {
-
-            for (int i = 0; i < list.Count; i++)
-            {
-                if (list[i].dateTime == null)
-                {
-                    TimeSpan time = TimeSpan.FromSeconds(list[i].recv_sec);
-                    DateTime date = new DateTime(1970, 1, 1, 0, 0, 0) + time;
-
-                    // +9시간을 더하기 위해 TimeSpan을 생성하여 DateTime에 추가
-                    TimeSpan offset = TimeSpan.FromHours(9);
-                    date = date.Add(offset);
-
-                    list[i].dateTime = date.ToString("yyyy-MM-dd HH:mm:ss");
-                }
-            }
         }
     }
 }
