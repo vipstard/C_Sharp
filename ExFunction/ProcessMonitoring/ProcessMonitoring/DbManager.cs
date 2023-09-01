@@ -10,7 +10,7 @@ namespace proc_mon
 {
     public class DbManager
     {
-        private string _alarmConn = @"Data Source = C:\nms4sa\database\nms_alarm.db";
+        private string _alarmConn = @"Data Source = C:\nms4sa\database\proc.db";
 
         public List<ProcessInfo> GetProcessInfo()
         {
