@@ -48,61 +48,27 @@ namespace proc_mon
             return processList;
         }
 
-      
-        //public void InsertMmsErrorList(List<MmsEvent> list)
-        //{
-        //    using (var conn = new SQLiteConnection(_mrConn))
-        //    {
-        //        conn.Open();
+        public void UpdateProcessInfo(List<ProcessInfo> processInfos)
+        {
+            using (var conn = new SQLiteConnection(_alarmConn))
+            {
+                conn.Open();
 
-        //        // mmsError 테이블에 데이터 삽입
-        //        string insertQuery =
-        //            "INSERT INTO mms_Error (timestamp, src_name, src_ip, dst_name, dst_ip, status, extra_Info, address, value, packet, packet_len)" +
-        //            "VALUES (@timestamp, @src_name, @src_ip, @dst_name, @dst_ip, @status, @extra_Info, @address, @value, @packet, @packet_len)";
+                foreach (ProcessInfo processInfo in processInfos)
+                {
+                    string updateQuery = "UPDATE proc_info SET Pid = @Pid, Status = @Status WHERE Id = @Id";
 
-        //        using (var cmd = new SQLiteCommand(insertQuery, conn))
-        //        {
-        //            cmd.Parameters.AddWithValue("@timestamp", "");
-        //            cmd.Parameters.AddWithValue("@src_name", "");
-        //            cmd.Parameters.AddWithValue("@src_ip", "");
-        //            cmd.Parameters.AddWithValue("@dst_name", "");
-        //            cmd.Parameters.AddWithValue("@dst_ip", "");
-        //            cmd.Parameters.AddWithValue("@status", 0);
-        //            cmd.Parameters.AddWithValue("@extra_Info", 0);
-        //            cmd.Parameters.AddWithValue("@address", "");
-        //            cmd.Parameters.AddWithValue("@value", "");
-        //            cmd.Parameters.AddWithValue("@packet", "");
-        //            cmd.Parameters.AddWithValue("@packet_len", 0);
+                    using (var cmd = new SQLiteCommand(updateQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Pid", processInfo.Pid);
+                        cmd.Parameters.AddWithValue("@Status", processInfo.Status);
+                        cmd.Parameters.AddWithValue("@Id", processInfo.Id);
 
-        //            foreach (MmsEvent mmsEvent in list)
-        //            {
-        //                // mmsEvent에서 값을 가져와서 파라미터 설정
-        //                cmd.Parameters["@timestamp"].Value = mmsEvent.timestamp;
-        //                cmd.Parameters["@src_name"].Value = mmsEvent.src_name;
-        //                cmd.Parameters["@src_ip"].Value = mmsEvent.src_ip;
-        //                cmd.Parameters["@dst_name"].Value = mmsEvent.dst_name;
-        //                cmd.Parameters["@dst_ip"].Value = mmsEvent.dst_ip;
-        //                cmd.Parameters["@status"].Value = mmsEvent.status;
-        //                cmd.Parameters["@extra_Info"].Value = mmsEvent.extra_Info;
-        //                cmd.Parameters["@address"].Value = mmsEvent.address;
-        //                cmd.Parameters["@value"].Value = mmsEvent.value;
-        //                cmd.Parameters["@packet"].Value = mmsEvent.packet == null ? DBNull.Value : (object)mmsEvent.packet;
-        //                cmd.Parameters["@packet_len"].Value = mmsEvent.packet_len;
-
-        //                // 삽입 쿼리 실행
-        //                try
-        //                {
-        //                    cmd.ExecuteNonQuery();
-        //                }
-        //                catch (SQLiteException ex)
-        //                {
-        //                    Console.WriteLine("SQL Error: " + ex.Message);
-        //                    // 에러를 적절히 처리하거나 로그에 기록하십시오.
-        //                }
-        //            }
-        //        } //using cmd
-        //    } //using conn
-        //}
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            } //using conn
+        } //using cmd
 
     }
 }
