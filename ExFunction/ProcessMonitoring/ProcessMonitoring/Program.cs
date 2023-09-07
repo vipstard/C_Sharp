@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Management;
 using proc_mon.Model;
+using System.Threading;
 
 namespace proc_mon
 {
-    internal class Program
+    public class Program
     {
+        private static List<ProcessInfo> _processInfos = null;
+        private static DbManager _dbManager = new DbManager();
+        private static AutoResetEvent _autoResetEvent = new AutoResetEvent(false); // 초기 상태는 non-signaled
+
         private static void Main(string[] args)
         {
-            DbManager _dbManager = new DbManager();
-            List<ProcessInfo> processInfos = _dbManager.GetProcessInfo();
+            _processInfos = _dbManager.GetProcessInfo();
 
             // WMI 이벤트 감시기 생성
             var processStartWatcher = new ManagementEventWatcher(
@@ -28,41 +32,9 @@ namespace proc_mon
             processStartWatcher.Start();
             processStopWatcher.Start();
 
-            while (true)
-            {
-                foreach (ProcessInfo processInfo in processInfos)
-                {
-                    if (IsProcessRunning(processInfo.Name, out int pid))
-                    {
-                        processInfo.Status = 1; // 프로세스가 실행 중인 경우
-                        processInfo.Pid = pid; // 프로세스의 Pid 저장
-                    }
-                    else
-                    {
-                        processInfo.Status = 0; // 프로세스가 종료된 경우
-                        processInfo.Pid = 0; // Pid를 0으로 초기화
-                    }
-
-                    Console.WriteLine($"{processInfo.Name} : 상태 {processInfo.Status}, Pid {processInfo.Pid}");
-                }
-
-                _dbManager.UpdateProcessInfo(processInfos);
-
-                Console.WriteLine("\n");
-                System.Threading.Thread.Sleep(5000);
-            }
-        }
-
-        private static bool IsProcessRunning(string processName, out int pid)
-        {
-            Process[] processes = Process.GetProcessesByName(processName);
-            if (processes.Length > 0)
-            {
-                pid = processes[0].Id;
-                return true;
-            }
-            pid = 0;
-            return false;
+            // 프로그램 종료 방지를 위해 대기
+            Console.WriteLine("프로세스 감시를 시작했습니다. 프로그램을 종료하려면 Ctrl+C를 누르세요.");
+            _autoResetEvent.WaitOne();
         }
 
         private static void ProcessStartedHandler(object sender, EventArrivedEventArgs e)
@@ -70,8 +42,20 @@ namespace proc_mon
             string processName = e.NewEvent.Properties["ProcessName"].Value.ToString();
             int processId = Convert.ToInt32(e.NewEvent.Properties["ProcessID"].Value);
 
-            Console.WriteLine($"프로세스 시작: {processName}, Pid: {processId}");
-            // 여기서 로그를 저장하거나 원하는 작업을 수행할 수 있습니다.
+            foreach (ProcessInfo processInfo in _processInfos)
+            {
+                processName = processName.Split('.')[0];
+                if (processInfo.Name == processName)
+                {
+                    Console.WriteLine($"프로세스 시작: {processName}, Pid: {processId}");
+                    processInfo.Status = 1;
+                    processInfo.Pid = processId;
+                    break;
+                }
+            }
+
+            // 프로세스 시작 이벤트가 발생할 때 DB 업데이트
+            _dbManager.UpdateProcessInfo(_processInfos);
         }
 
         private static void ProcessStoppedHandler(object sender, EventArrivedEventArgs e)
@@ -79,8 +63,21 @@ namespace proc_mon
             string processName = e.NewEvent.Properties["ProcessName"].Value.ToString();
             int processId = Convert.ToInt32(e.NewEvent.Properties["ProcessID"].Value);
 
-            Console.WriteLine($"프로세스 종료: {processName}, Pid: {processId}");
-            // 여기서 로그를 저장하거나 원하는 작업을 수행할 수 있습니다.
+            foreach (ProcessInfo processInfo in _processInfos)
+            {
+                processName = processName.Split('.')[0] == "PacketCap_Goos" ? "PacketCap_Goose" : processName.Split('.')[0];
+
+                if (processInfo.Name == processName)
+                {
+                    Console.WriteLine($"프로세스 종료: {processName}, Pid: {processId}");
+                    processInfo.Status = 0;
+                    processInfo.Pid = 0;
+                    break;
+                }
+            }
+
+            // 프로세스 종료 이벤트가 발생할 때 DB 업데이트
+            _dbManager.UpdateProcessInfo(_processInfos);
         }
     }
 }

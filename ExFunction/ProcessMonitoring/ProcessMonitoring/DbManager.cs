@@ -10,12 +10,12 @@ namespace proc_mon
 {
     public class DbManager
     {
-        private string _alarmConn = @"Data Source = C:\nms4sa\database\proc.db";
+        private string _procConn = @"Data Source = C:\nms4sa\database\proc.db";
 
         public List<ProcessInfo> GetProcessInfo()
         {
             List<ProcessInfo> processList = new List<ProcessInfo>();
-            using (var conn = new SQLiteConnection(_alarmConn))
+            using (var conn = new SQLiteConnection(_procConn))
             {
                 conn.Open();
 
@@ -50,7 +50,7 @@ namespace proc_mon
 
         public void UpdateProcessInfo(List<ProcessInfo> processInfos)
         {
-            using (var conn = new SQLiteConnection(_alarmConn))
+            using (var conn = new SQLiteConnection(_procConn))
             {
                 conn.Open();
 
@@ -69,6 +69,29 @@ namespace proc_mon
                 }
             } //using conn
         } //using cmd
+
+        public void InsertLog(List<ProcessInfo> processInfos)
+        {
+            using (var conn = new SQLiteConnection(_procConn))
+            {
+                conn.Open();
+
+                foreach (ProcessInfo processInfo in processInfos)
+                {
+                    string updateQuery = "UPDATE proc_info SET Pid = @Pid, Status = @Status WHERE Id = @Id";
+
+                    using (var cmd = new SQLiteCommand(updateQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Pid", processInfo.Pid);
+                        cmd.Parameters.AddWithValue("@Status", processInfo.Status);
+                        cmd.Parameters.AddWithValue("@Id", processInfo.Id);
+
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            } //using conn
+        } //using cmd
+
 
     }
 }
