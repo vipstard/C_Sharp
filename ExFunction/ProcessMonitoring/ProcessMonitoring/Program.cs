@@ -16,7 +16,10 @@ namespace proc_mon
 
         private static void Main(string[] args)
         {
-         
+            DbManager dbManager = new DbManager();
+            
+            // 프로그램 실행전에 이미 동작중인 프로세스 상태 업데이트
+            _eventHandle.GetRunningProcesses();
 
             // WMI 이벤트 감시기 생성
             var processStartWatcher = new ManagementEventWatcher(
@@ -34,13 +37,7 @@ namespace proc_mon
             processStopWatcher.Start();
 
             Console.WriteLine("프로세스 감시를 시작했습니다. 프로그램을 종료하려면 Ctrl+C를 누르세요.");
-
-            // 프로그램 종료 방지를 위해 대기
             _autoResetEvent.WaitOne();
         }
-
-   
-
-
     }
 }

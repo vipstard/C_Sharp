@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
 using System.Management;
 using proc_mon;
 using proc_mon.Model;
@@ -11,6 +13,7 @@ namespace ProcessMonitoring
     {
         private List<ProcessInfo> _processInfos = null;
         private DbManager _dbManager = new DbManager();
+
 
         public void ProcessStartedHandler(object sender, EventArrivedEventArgs e)
         {
@@ -33,6 +36,7 @@ namespace ProcessMonitoring
             UpdateProcessInfo();
         }
 
+
         public void ProcessStoppedHandler(object sender, EventArrivedEventArgs e)
         {
             try
@@ -42,7 +46,7 @@ namespace ProcessMonitoring
                 string processName = e.NewEvent.Properties["ProcessName"].Value.ToString();
                 int processId = Convert.ToInt32(e.NewEvent.Properties["ProcessID"].Value);
                 uint exitCode = 
-                    Convert.ToUInt32(e.NewEvent.Properties["ExitStatus"].Value) == 4294967295
+                    Convert.ToUInt32(e.NewEvent.Properties["ExitStatus"].Value) == 4294967295 // error_mon 정상종료시 이 숫자가 나옴. 나머지는 해당 X
                     ? 0
                     : Convert.ToUInt32(e.NewEvent.Properties["ExitStatus"].Value);
 
@@ -70,6 +74,38 @@ namespace ProcessMonitoring
             }
         }
 
+        // 프로그램 시작 시 현재 동작중인 프로세스 체크
+        public void GetRunningProcesses()
+        {
+            List<Process> runningProcesses = Process.GetProcesses().ToList();
+            LoadProcessInfo();
+
+            _processInfos.ForEach(p => { p.Pid = 0; p.Status = 0; });
+
+            foreach (Process process in runningProcesses)
+            {
+                // 여기에서 필요한 정보를 추출하고 ProcessInfo 객체를 생성하여 리스트에 추가
+                string processName = process.ProcessName;
+                int processId = process.Id;
+
+                // 이미 있는 프로세스 정보를 찾아 업데이트
+                ProcessInfo existingProcessInfo = _processInfos.Find(pi => pi.Name == processName);
+
+                if (existingProcessInfo != null)
+                {
+                    // 이미 있는 프로세스 정보가 있으면 업데이트
+                    existingProcessInfo.Pid = processId;
+                    existingProcessInfo.Status = 1; 
+
+                    Console.WriteLine($"동작중인 프로세스 : {existingProcessInfo.Name}, Pid : {existingProcessInfo.Pid}, 상태 : {existingProcessInfo.Status}");
+                }
+            }
+
+            UpdateProcessInfo();
+            Console.WriteLine();
+        }
+
+
         private void LoadProcessInfo()
         {
             if (_processInfos == null)
@@ -78,15 +114,18 @@ namespace ProcessMonitoring
             }
         }
 
+
         private void UpdateProcessInfo()
         {
             _dbManager.UpdateProcessInfo(_processInfos);
         }
 
         private string GetNormalizedProcessName(string processName)
-        {   // PacketCap_Goos로 가져올 때가 종종있음.  있을때만 Goose로 변경 그외 프로세스는 해당 X
+        {   
+            // PacketCap_Goos로 가져올 때가 종종있음.  있을때만 Goose로 변경 그 외 프로세스는 해당 X
             return processName.Split('.')[0] == "PacketCap_Goos" ? "PacketCap_Goose" : processName.Split('.')[0];
         }
+
 
         public enum ExitCode
         {
