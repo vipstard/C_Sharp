@@ -4,7 +4,9 @@ using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 using proc_mon.Model;
+using ProcessMonitoring.Model;
 
 namespace proc_mon
 {
@@ -70,28 +72,25 @@ namespace proc_mon
             } //using conn
         } //using cmd
 
-        public void InsertLog(List<ProcessInfo> processInfos)
+        public void InsertLog(ProcessEvent processEvent)
         {
             using (var conn = new SQLiteConnection(_procConn))
             {
                 conn.Open();
 
-                foreach (ProcessInfo processInfo in processInfos)
+                string insertQuery = "INSERT INTO proc_event( timestamp, name, status, extra_info) VALUES(@TimeStamp, @Name, @Status, @ExtraInfo)";
+
+                using (var cmd = new SQLiteCommand(insertQuery, conn))
                 {
-                    string updateQuery = "UPDATE proc_info SET Pid = @Pid, Status = @Status WHERE Id = @Id";
+                    cmd.Parameters.AddWithValue("@TimeStamp", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@Name", processEvent.Name);
+                    cmd.Parameters.AddWithValue("@Status", processEvent.Status);
+                    cmd.Parameters.AddWithValue("@ExtraInfo", processEvent.ExtraInfo);
 
-                    using (var cmd = new SQLiteCommand(updateQuery, conn))
-                    {
-                        cmd.Parameters.AddWithValue("@Pid", processInfo.Pid);
-                        cmd.Parameters.AddWithValue("@Status", processInfo.Status);
-                        cmd.Parameters.AddWithValue("@Id", processInfo.Id);
-
-                        cmd.ExecuteNonQuery();
-                    }
+                    cmd.ExecuteNonQuery();
                 }
             } //using conn
         } //using cmd
-
 
     }
 }

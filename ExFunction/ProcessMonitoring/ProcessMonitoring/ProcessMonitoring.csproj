@@ -67,7 +67,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DbManager.cs" />
+    <Compile Include="EventHandle.cs" />
     <Compile Include="Model\ProcessInfo.cs" />
+    <Compile Include="Model\ProcessEvent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
