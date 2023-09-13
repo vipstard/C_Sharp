@@ -46,11 +46,28 @@ namespace ProcessMonitoring
 
                 string processName = e.NewEvent.Properties["ProcessName"].Value.ToString();
                 int processId = Convert.ToInt32(e.NewEvent.Properties["ProcessID"].Value);
-                uint exitCode = 
-                    Convert.ToUInt32(e.NewEvent.Properties["ExitStatus"].Value) == 4294967295 // error_mon 정상종료시 이 숫자가 나옴. 나머지는 해당 X
-                    ? 0
-                    : Convert.ToUInt32(e.NewEvent.Properties["ExitStatus"].Value);
+                uint exitCode = Convert.ToUInt32(e.NewEvent.Properties["ExitStatus"].Value);
 
+                switch (exitCode)
+                {
+                    case 4294967295:
+                        exitCode = 0; 
+                        break;
+
+                    case 3221225786: //SNMP_MON, mms_mon
+                        exitCode = 0;
+                        break;
+
+                    //case 3221225477:
+                    //    exitCode = 0;
+                    //    break;
+
+                    case 62097:
+                        exitCode = 0;
+                        break;
+                }
+
+                
                 processName = GetNormalizedProcessName(processName);
 
                 ProcessInfo processInfo = _processInfos.Find(pi => pi.Name == processName);

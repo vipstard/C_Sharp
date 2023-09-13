@@ -31,6 +31,7 @@ namespace proc_mon
             // 프로세스 시작 및 종료 이벤트 핸들러 등록
             processStartWatcher.EventArrived += _eventHandle.ProcessStartedHandler;
             processStopWatcher.EventArrived += _eventHandle.ProcessStoppedHandler;
+            
 
             // 이벤트 감시 시작
             processStartWatcher.Start();
