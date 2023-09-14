@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33829.357
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlParse", "XmlParse\XmlParse.csproj", "{1FA87665-CD33-4AC2-9544-B5CDB0932DDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FA87665-CD33-4AC2-9544-B5CDB0932DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA87665-CD33-4AC2-9544-B5CDB0932DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA87665-CD33-4AC2-9544-B5CDB0932DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA87665-CD33-4AC2-9544-B5CDB0932DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {520A6DC1-69DD-44A5-8D87-98A95017AAC0}
+	EndGlobalSection
+EndGlobal
