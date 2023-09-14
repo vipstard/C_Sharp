@@ -11,7 +11,7 @@ namespace XmlParse
         static void Main(string[] args)
         {
             // XDocument 형식의 파일을 로드
-            XDocument xmlScl = XDocument.Load("C:\\Users\\Yoon DongIl\\Desktop\\Yoon\\NasCopy\\NMS\\개정규격관련파일\\개정규격관련파일\\E000_C457.cid");
+            XDocument xmlScl = XDocument.Load("C:\\Users\\*.cid");
 
             // AddIed 메서드 호출
             Device device = new Device();
