@@ -14,7 +14,8 @@ namespace ProcessMonitoring
     {
         private List<ProcessInfo> _processInfos = null;
         private DbManager _dbManager = new DbManager();
-
+        private List<ProcessInfo> _processArr = null;
+        private bool isAnyProcessDown = false;
 
         public void ProcessStartedHandler(object sender, EventArrivedEventArgs e)
         {
@@ -141,6 +142,36 @@ namespace ProcessMonitoring
         {   
             // PacketCap_Goos로 가져올 때가 종종있음.  있을때만 Goose로 변경 그 외 프로세스는 해당 X
             return processName.Split('.')[0] == "PacketCap_Goos" ? "PacketCap_Goose" : processName.Split('.')[0];
+        }
+
+        public void OverallProcessStatus()
+        {
+            try
+            {
+                _processArr = _dbManager.GetProcessInfo();
+                Process[] processes = Process.GetProcesses();
+
+                foreach (var proc in _processArr)
+                {
+                    var process = processes.FirstOrDefault(p => p.ProcessName.Contains(proc.Name));
+
+                    if (process == null)
+                    {
+                        isAnyProcessDown = true;
+                        break;
+                    }
+                    else isAnyProcessDown = false;
+
+                    Console.WriteLine($"{proc.Name}, {isAnyProcessDown}");
+                }
+
+                //_alarmDal.OverallProcessStatus(isAnyProcessDown);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
         }
 
 
