@@ -20,6 +20,7 @@ namespace ProcessMonitoring
         private List<ProcessInfo> _processArr = null;
         private bool isAnyProcessDown = false;
         private string _timeStamp = null;
+        private string _updateTimeStamp = null;
         private readonly string _queuePath = ".\\private$\\MonQueue";
 		public void ProcessStartedHandler(object sender, EventArrivedEventArgs e)
         {
@@ -55,6 +56,7 @@ namespace ProcessMonitoring
                 int processId = Convert.ToInt32(e.NewEvent.Properties["ProcessID"].Value);
                 uint exitCode = Convert.ToUInt32(e.NewEvent.Properties["ExitStatus"].Value);
 
+                // wnms service 정상 종료 시켜도 exitCode가 튀는 경우가 있음. 0으로 변경작업
                 switch (exitCode)
                 {
                     case 4294967295:
@@ -81,7 +83,7 @@ namespace ProcessMonitoring
 
                 if (processInfo != null)
                 {
-	                _timeStamp = _timeStamp != null ? _timeStamp : DateTime.Now.ToString();
+	                _timeStamp = _updateTimeStamp != null ? _updateTimeStamp : DateTime.Now.ToString();
 	                Console.WriteLine($"프로세스 종료: {processName}, Pid: {processId}, EXITCODE : {exitCode}, TimeStamp : {_timeStamp}");
 
                     ExitCode exitCodeEnum = exitCode == 0 ? ExitCode.NORMAL : ExitCode.ABNORMAL;
@@ -89,6 +91,7 @@ namespace ProcessMonitoring
 
                     processInfo.Status = 0;
                     processInfo.Pid = 0;
+                    _timeStamp = null;
                 }
 
                 UpdateProcessInfo();
@@ -133,7 +136,6 @@ namespace ProcessMonitoring
             Console.WriteLine();
         }
 
-
         private void LoadProcessInfo()
         {
             if (_processInfos == null)
@@ -141,7 +143,6 @@ namespace ProcessMonitoring
                 _processInfos = _dbManager.GetProcessInfo();
             }
         }
-
 
         private void UpdateProcessInfo()
         {
@@ -188,57 +189,62 @@ namespace ProcessMonitoring
             }
         }
 
-		public async Task IedAddRestartProcessAsync()
+		public void IedAddRestartProcess(bool RestartProcessFlag)
 		{
-			try
+			while (RestartProcessFlag)
 			{
-				string[] processes = { "goose_mon", "mms_mon" };
 
-				// 큐가 없으면 생성
-				if (!MessageQueue.Exists(_queuePath))
+				try
 				{
-					MessageQueue.Create(_queuePath);
-				}
+					string[] processes = { "goose_mon", "mms_mon" };
 
-				// 메세지 받기
-				using (MessageQueue queue = new MessageQueue(_queuePath))
-				{
-					queue.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
-
-					Message message = queue.Receive();
-					string messageText = message.Body.ToString();
-
-					Console.WriteLine("Message received: " + messageText);
-					
-					List<Process> runningProcesses = Process.GetProcesses().ToList();
-
-					foreach (var process in processes)
+					// 큐가 없으면 생성
+					if (!MessageQueue.Exists(_queuePath))
 					{
-						var existingProcess = runningProcesses.Find(p => p.ProcessName == process);
-						if (existingProcess != null)
+						MessageQueue.Create(_queuePath);
+					}
+
+					// 메세지 받기, 메세지 있으면 제일 먼저 실행
+					using (MessageQueue queue = new MessageQueue(_queuePath))
+					{
+						queue.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
+
+						Message message = queue.Receive();
+						string messageText = message.Body.ToString();
+
+						Console.WriteLine("Message received: " + messageText);
+
+						List<Process> runningProcesses = Process.GetProcesses().ToList();
+
+						foreach (var process in processes)
 						{
-							int extraInfo = Convert.ToInt32(messageText);
-							Console.WriteLine($"TimeStamp : {_timeStamp}");
+							var existingProcess = runningProcesses.Find(p => p.ProcessName == process);
+							if (existingProcess != null)
+							{
+								int extraInfo = Convert.ToInt32(messageText);
+								_updateTimeStamp = DateTime.Now.ToString();
+								Console.WriteLine($"TimeStamp : {_updateTimeStamp}");
 
-							existingProcess.Kill();
-							existingProcess.WaitForExit(); 
-							_timeStamp = DateTime.Now.ToString();
-							
-							Thread.Sleep(3000);
-							UpdateExitProcessEvent(_timeStamp, extraInfo);
-							_timeStamp = null;
+								existingProcess.Kill();
+								existingProcess.WaitForExit();
+								
+								Thread.Sleep(3000);
 
+								// Update는 제일 마지막에 실행
+								UpdateExitProcessEvent(_updateTimeStamp, extraInfo);
+								_updateTimeStamp = null;
+							}
 						}
 					}
+
+
+
 				}
-				
-
-
-            }
-			catch (Exception e)
-			{
-				Console.WriteLine($"Error: {e.Message}");
-				// 예외 처리
+				catch (Exception e)
+				{
+					Console.WriteLine($"Error: {e.Message}");
+					// 예외 처리
+				}
 			}
 		}
 

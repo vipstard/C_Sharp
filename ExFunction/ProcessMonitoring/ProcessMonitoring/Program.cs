@@ -10,8 +10,10 @@ namespace proc_mon
     {
         private static AutoResetEvent _autoResetEvent = new AutoResetEvent(false); // 초기 상태는 non-signaled
         private static EventHandle _eventHandle = new EventHandle();
+        private static Task RestartProcessTask = null;
+        private static bool RestartProcessFlag = false;
 
-        public static async Task Main(string[] args)
+		public static async Task Main(string[] args)
         {
 	        DbManager dbManager = new DbManager();
 
@@ -33,15 +35,28 @@ namespace proc_mon
 	        processStartWatcher.Start();
 	        processStopWatcher.Start();
 
-	        // MSMQ 비동기 메서드를 주기적으로 호출
-	        while (true)
-	        {
-		        await _eventHandle.IedAddRestartProcessAsync();
-		        await Task.Delay(5000); // 5초마다 메세지 큐 확인
-	        }
+			IedAddRestartProcessTask();
+			//// MSMQ 비동기 메서드를 주기적으로 호출
+			//while (true)
+	  //      {
+		 //       await _eventHandle.IedAddRestartProcess();
+		 //       await Task.Delay(5000); // 5초마다 메세지 큐 확인
+	  //      }
 
 	        // 아래의 코드는 실행되지 않을 것입니다.
 	        Console.WriteLine("프로세스 감시를 시작했습니다. 프로그램을 종료하려면 Ctrl+C를 누르세요.");
+	        // 메인 스레드 대기
+	        await Task.Delay(-1);
+
+        }
+
+        public static void IedAddRestartProcessTask()
+        {
+	        if (RestartProcessTask == null)
+	        {
+		        RestartProcessFlag = true;
+		        RestartProcessTask = Task.Factory.StartNew(() => _eventHandle.IedAddRestartProcess(RestartProcessFlag));
+			}
         }
 
 
