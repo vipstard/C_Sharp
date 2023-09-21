@@ -72,7 +72,27 @@ namespace proc_mon
             } //using conn
         } //using cmd
 
-        public void InsertLog(ProcessEvent processEvent)
+        public void UpdateExitProcessEvent(string timeStamp, int extraInfo)
+        {
+	        using (var conn = new SQLiteConnection(_procConn))
+	        {
+		        conn.Open();
+
+			    string updateQuery = "UPDATE proc_event SET extra_Info = @extraInfo WHERE timestamp = @timestamp AND status = @status";
+
+				using (var cmd = new SQLiteCommand(updateQuery, conn))
+			    {
+				    cmd.Parameters.AddWithValue("@timestamp", timeStamp);
+				    cmd.Parameters.AddWithValue("@status", 0);
+				    cmd.Parameters.AddWithValue("@extraInfo", extraInfo);
+				    cmd.ExecuteNonQuery();
+			    }
+
+				Console.WriteLine("Update Log ");
+	        } //using conn
+        } //using cmd
+
+		public void InsertLog(ProcessEvent processEvent)
         {
             using (var conn = new SQLiteConnection(_procConn))
             {
@@ -82,14 +102,15 @@ namespace proc_mon
 
                 using (var cmd = new SQLiteCommand(insertQuery, conn))
                 {
-                    cmd.Parameters.AddWithValue("@TimeStamp", DateTime.Now);
+                    cmd.Parameters.AddWithValue("@TimeStamp", processEvent.TimeStamp);
                     cmd.Parameters.AddWithValue("@Name", processEvent.Name);
                     cmd.Parameters.AddWithValue("@Status", processEvent.Status);
                     cmd.Parameters.AddWithValue("@ExtraInfo", processEvent.ExtraInfo);
 
                     cmd.ExecuteNonQuery();
                 }
-            } //using conn
+                Console.WriteLine("Insert Log");
+			} //using conn
         } //using cmd
 
     }

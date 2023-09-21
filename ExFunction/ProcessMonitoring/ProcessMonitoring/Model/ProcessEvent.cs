@@ -9,8 +9,15 @@ namespace ProcessMonitoring.Model
         public int Status { get; set; }
         public int  ExtraInfo { get; set; }
 
-        public ProcessEvent(string name, int status,  EventHandle.ExitCode exitCode)
+        public ProcessEvent( string name, int status, EventHandle.ExitCode exitCode)
         {
+	        Name = name;
+	        Status = status;
+	        ExtraInfo = Convert.ToInt32(exitCode);
+        }
+		public ProcessEvent(string timeStamp, string name, int status,  EventHandle.ExitCode exitCode)
+        {
+            TimeStamp = timeStamp;
             Name = name;
             Status = status;
             ExtraInfo = Convert.ToInt32(exitCode);

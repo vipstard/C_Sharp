@@ -4,6 +4,9 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Management;
+using System.Messaging;
+using System.Threading;
+using System.Threading.Tasks;
 using proc_mon;
 using proc_mon.Model;
 using ProcessMonitoring.Model;
@@ -16,8 +19,9 @@ namespace ProcessMonitoring
         private DbManager _dbManager = new DbManager();
         private List<ProcessInfo> _processArr = null;
         private bool isAnyProcessDown = false;
-
-        public void ProcessStartedHandler(object sender, EventArrivedEventArgs e)
+        private string _timeStamp = null;
+        private readonly string _queuePath = ".\\private$\\MonQueue";
+		public void ProcessStartedHandler(object sender, EventArrivedEventArgs e)
         {
             LoadProcessInfo();
 
@@ -29,10 +33,12 @@ namespace ProcessMonitoring
 
             if (processInfo != null)
             {
-                Console.WriteLine($"프로세스 시작: {processName}, Pid: {processId}");
-                processInfo.Status = 1;
+	            string timeStamp = DateTime.Now.ToString();
+	            processInfo.Status = 1;
                 processInfo.Pid = processId;
-                _dbManager.InsertLog(new ProcessEvent(processName, 1, 0));
+
+                Console.WriteLine($"프로세스 시작: {processName}, Pid: {processId}, timeStamp : {timeStamp}");
+				_dbManager.InsertLog(new ProcessEvent(timeStamp, processName, 1, 0));
             }
 
             UpdateProcessInfo();
@@ -59,9 +65,9 @@ namespace ProcessMonitoring
                         exitCode = 0;
                         break;
 
-                    //case 3221225477:
-                    //    exitCode = 0;
-                    //    break;
+                    case 3221225477:
+                        exitCode = 0;
+                        break;
 
                     case 62097:
                         exitCode = 0;
@@ -75,16 +81,19 @@ namespace ProcessMonitoring
 
                 if (processInfo != null)
                 {
-                    Console.WriteLine($"프로세스 종료: {processName}, Pid: {processId}, EXITCODE : {exitCode}");
+	                _timeStamp = _timeStamp != null ? _timeStamp : DateTime.Now.ToString();
+	                Console.WriteLine($"프로세스 종료: {processName}, Pid: {processId}, EXITCODE : {exitCode}, TimeStamp : {_timeStamp}");
 
                     ExitCode exitCodeEnum = exitCode == 0 ? ExitCode.NORMAL : ExitCode.ABNORMAL;
-                    _dbManager.InsertLog(new ProcessEvent(processName, 0, exitCodeEnum));
+                    _dbManager.InsertLog(new ProcessEvent(_timeStamp, processName, 0, exitCodeEnum));
 
                     processInfo.Status = 0;
                     processInfo.Pid = 0;
                 }
 
                 UpdateProcessInfo();
+
+                
             }
             catch (Exception ex)
             {
@@ -121,6 +130,7 @@ namespace ProcessMonitoring
             }
 
             UpdateProcessInfo();
+            Console.WriteLine();
         }
 
 
@@ -137,8 +147,12 @@ namespace ProcessMonitoring
         {
             _dbManager.UpdateProcessInfo(_processInfos);
         }
+        private void UpdateExitProcessEvent(string timeStamp, int extraInfo)
+        {
+	        _dbManager.UpdateExitProcessEvent(timeStamp, extraInfo);
+        }
 
-        private string GetNormalizedProcessName(string processName)
+		private string GetNormalizedProcessName(string processName)
         {   
             // PacketCap_Goos로 가져올 때가 종종있음.  있을때만 Goose로 변경 그 외 프로세스는 해당 X
             return processName.Split('.')[0] == "PacketCap_Goos" ? "PacketCap_Goose" : processName.Split('.')[0];
@@ -174,8 +188,61 @@ namespace ProcessMonitoring
             }
         }
 
+		public async Task IedAddRestartProcessAsync()
+		{
+			try
+			{
+				string[] processes = { "goose_mon", "mms_mon" };
 
-        public enum ExitCode
+				// 큐가 없으면 생성
+				if (!MessageQueue.Exists(_queuePath))
+				{
+					MessageQueue.Create(_queuePath);
+				}
+
+				// 메세지 받기
+				using (MessageQueue queue = new MessageQueue(_queuePath))
+				{
+					queue.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
+
+					Message message = queue.Receive();
+					string messageText = message.Body.ToString();
+
+					Console.WriteLine("Message received: " + messageText);
+					
+					List<Process> runningProcesses = Process.GetProcesses().ToList();
+
+					foreach (var process in processes)
+					{
+						var existingProcess = runningProcesses.Find(p => p.ProcessName == process);
+						if (existingProcess != null)
+						{
+							int extraInfo = Convert.ToInt32(messageText);
+							Console.WriteLine($"TimeStamp : {_timeStamp}");
+
+							existingProcess.Kill();
+							existingProcess.WaitForExit(); 
+							_timeStamp = DateTime.Now.ToString();
+							
+							Thread.Sleep(3000);
+							UpdateExitProcessEvent(_timeStamp, extraInfo);
+							_timeStamp = null;
+
+						}
+					}
+				}
+				
+
+
+            }
+			catch (Exception e)
+			{
+				Console.WriteLine($"Error: {e.Message}");
+				// 예외 처리
+			}
+		}
+
+		public enum ExitCode
         {
             NORMAL,
             ABNORMAL
