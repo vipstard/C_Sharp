@@ -13,6 +13,8 @@ namespace proc_mon
     public class DbManager
     {
         private string _procConn = @"Data Source = C:\nms4sa\database\proc.db";
+        private string _configConn = @"Data Source = C:\nms4sa\database\nms_config.db";
+        private int _previousRowCount = 0; // 이전 상태의 row count를 저장하는 변수
 
         public List<ProcessInfo> GetProcessInfo()
         {
@@ -113,5 +115,31 @@ namespace proc_mon
 			} //using conn
         } //using cmd
 
+     
+
+        public bool DatabaseHasNewData()
+        {
+            using (SQLiteConnection connection = new SQLiteConnection(_configConn))
+            {
+                connection.Open();
+
+                // 특정 테이블에서 값을 조회하여 변경 여부를 확인하는 쿼리를 작성
+                string query = "SELECT COUNT(*) FROM Device WHERE type = 0;";
+
+                using (SQLiteCommand command = new SQLiteCommand(query, connection))
+                {
+                    int currentRowCount = Convert.ToInt32(command.ExecuteScalar());
+
+                    // 이전 상태의 row count와 현재 상태의 row count를 비교하여 변경된 데이터 여부를 확인
+                    bool hasNewData = currentRowCount > _previousRowCount;
+
+                    // 이전 상태의 row count를 현재 상태의 row count로 업데이트
+                    _previousRowCount = currentRowCount;
+                    Console.WriteLine($"currentRowCount : {currentRowCount} _previousRowCount : {_previousRowCount}  hasNewData : {hasNewData}");
+
+                    return hasNewData;
+                }
+            }
+        }
     }
 }

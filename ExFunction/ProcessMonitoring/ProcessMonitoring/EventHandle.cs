@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,8 @@ namespace ProcessMonitoring
         private string _timeStamp = null;
         private string _updateTimeStamp = null;
         private readonly string _queuePath = ".\\private$\\MonQueue";
+
+
 		public void ProcessStartedHandler(object sender, EventArrivedEventArgs e)
         {
             LoadProcessInfo();
@@ -106,6 +109,7 @@ namespace ProcessMonitoring
             }
         }
 
+
         // 프로그램 시작 시 현재 동작중인 프로세스 체크
         public void GetRunningProcesses()
         {
@@ -159,86 +163,47 @@ namespace ProcessMonitoring
             return processName.Split('.')[0] == "PacketCap_Goos" ? "PacketCap_Goose" : processName.Split('.')[0];
         }
 
-        public void OverallProcessStatus()
-        {
-            try
-            {
-                _processArr = _dbManager.GetProcessInfo();
-                Process[] processes = Process.GetProcesses();
 
-                foreach (var proc in _processArr)
-                {
-                    var process = processes.FirstOrDefault(p => p.ProcessName.Contains(proc.Name));
+  
 
-                    if (process == null)
-                    {
-                        isAnyProcessDown = true;
-                        break;
-                    }
-                    else isAnyProcessDown = false;
-
-                    Console.WriteLine($"{proc.Name}, {isAnyProcessDown}");
-                }
-
-                //_alarmDal.OverallProcessStatus(isAnyProcessDown);
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine(e);
-                throw;
-            }
-        }
-
+        /// <summary>
+        /// IED 추가시 프로세스 종료시키고 별도로 ProcessStartedHandler가 이벤트감지하고 DB에 Insert 후
+        /// 여기서 timestamp 일치하는 데이터 extraInfo를 3 (IED추가) 으로 업데이트 
+        /// </summary>
+        /// <param name="RestartProcessFlag"></param>
 		public void IedAddRestartProcess(bool RestartProcessFlag)
 		{
 			while (RestartProcessFlag)
 			{
-
 				try
 				{
 					string[] processes = { "goose_mon", "mms_mon" };
 
-					// 큐가 없으면 생성
-					if (!MessageQueue.Exists(_queuePath))
+					// 데이터베이스 폴링을 통해 변경 사항 확인
+					if (_dbManager.DatabaseHasNewData())
 					{
-						MessageQueue.Create(_queuePath);
-					}
-
-					// 메세지 받기, 메세지 있으면 제일 먼저 실행
-					using (MessageQueue queue = new MessageQueue(_queuePath))
-					{
-						queue.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
-
-						Message message = queue.Receive();
-						string messageText = message.Body.ToString();
-
-						Console.WriteLine("Message received: " + messageText);
-
-						List<Process> runningProcesses = Process.GetProcesses().ToList();
-
 						foreach (var process in processes)
 						{
-							var existingProcess = runningProcesses.Find(p => p.ProcessName == process);
+							var existingProcess = Process.GetProcessesByName(process).FirstOrDefault();
 							if (existingProcess != null)
 							{
-								int extraInfo = Convert.ToInt32(messageText);
-								_updateTimeStamp = DateTime.Now.ToString();
-								Console.WriteLine($"TimeStamp : {_updateTimeStamp}");
-
 								existingProcess.Kill();
 								existingProcess.WaitForExit();
-								
+
+								_updateTimeStamp = DateTime.Now.ToString();
+								Console.WriteLine($"TimeStamp: {_updateTimeStamp}");
+
 								Thread.Sleep(3000);
 
 								// Update는 제일 마지막에 실행
-								UpdateExitProcessEvent(_updateTimeStamp, extraInfo);
+								UpdateExitProcessEvent(_updateTimeStamp, 3);// IED 추가시 extraInfo=3
 								_updateTimeStamp = null;
 							}
 						}
 					}
 
-
-
+					// 일정 간격으로 폴링을 하기 위해 기다림
+					Thread.Sleep(5000); // 5초마다 폴링
 				}
 				catch (Exception e)
 				{
@@ -248,7 +213,72 @@ namespace ProcessMonitoring
 			}
 		}
 
-		public enum ExitCode
+        /// <summary>
+        /// 위의 함수와 역할 같음 MSMQ사용. 현재 사용 X
+        /// </summary>
+        /// <param name="RestartProcessFlag"></param>
+        public void IedAddRestartProcessMSMQ(bool RestartProcessFlag)
+        {
+            while (RestartProcessFlag)
+            {
+
+                try
+                {
+                    string[] processes = { "goose_mon", "mms_mon" };
+
+                    // 큐가 없으면 생성
+                    if (!MessageQueue.Exists(_queuePath))
+                    {
+                        MessageQueue.Create(_queuePath);
+                    }
+
+                    // 메세지 받기, 메세지 있으면 제일 먼저 실행
+                    using (MessageQueue queue = new MessageQueue(_queuePath))
+                    {
+                        queue.Formatter = new XmlMessageFormatter(new string[] { "System.String,mscorlib" });
+
+                        Message message = queue.Receive();
+                        string messageText = message.Body.ToString();
+
+                        Console.WriteLine("Message received: " + messageText);
+
+                        List<Process> runningProcesses = Process.GetProcesses().ToList();
+
+                        foreach (var process in processes)
+                        {
+                            var existingProcess = runningProcesses.Find(p => p.ProcessName == process);
+                            if (existingProcess != null)
+                            {
+                                int extraInfo = Convert.ToInt32(messageText);
+                                _updateTimeStamp = DateTime.Now.ToString();
+                                Console.WriteLine($"TimeStamp : {_updateTimeStamp}");
+
+                                existingProcess.Kill();
+                                existingProcess.WaitForExit();
+
+                                Thread.Sleep(3000);
+
+                                // Update는 제일 마지막에 실행
+                                UpdateExitProcessEvent(_updateTimeStamp, extraInfo);
+                                _updateTimeStamp = null;
+                            }
+                        }
+                    }
+
+
+
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine($"Error: {e.Message}");
+                    // 예외 처리
+                }
+            }
+        }
+
+
+
+        public enum ExitCode
         {
             NORMAL,
             ABNORMAL
@@ -296,6 +326,39 @@ namespace ProcessMonitoring
             return NowDate.ToString("yyyy-MM-dd HH:mm:ss") + ":" + NowDate.Millisecond.ToString("000");
         }
         #endregion
+
+#if false
+        public void OverallProcessStatus()
+        {
+            try
+            {
+                _processArr = _dbManager.GetProcessInfo();
+                Process[] processes = Process.GetProcesses();
+
+                foreach (var proc in _processArr)
+                {
+                    var process = processes.FirstOrDefault(p => p.ProcessName.Contains(proc.Name));
+
+                    if (process == null)
+                    {
+                        isAnyProcessDown = true;
+                        break;
+                    }
+                    else isAnyProcessDown = false;
+
+                    Console.WriteLine($"{proc.Name}, {isAnyProcessDown}");
+                }
+
+                //_alarmDal.OverallProcessStatus(isAnyProcessDown);
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
+
+#endif
     }
 
 }
