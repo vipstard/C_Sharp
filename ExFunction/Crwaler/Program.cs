@@ -17,11 +17,7 @@ namespace Crwaler
             Console.WriteLine("현재 실행 파일이 있는 디렉토리 경로: " + currentDirectory);
 
 
-            #region 24.05.17 요청 URL
-            // http://paranoid:survive@10.10.156.205:10103/resource/10.10.156.205/49675/services/547/transceivers/
-            // http://paranoid:survive@10.10.156.206:10103/resource/10.10.156.206/49674/services/547/transceivers/
-            // http://paranoid:survive@10.10.156.21:10103/resource/10.10.156.21/49831/services/297/transceivers/
-            #endregion
+       
 
             string ip = ""; //접속할 H101 IP만 바꿔주면 됌
             string mainUrl = $"";
