@@ -1,0 +1,2 @@
+Selenium.WebDriver  -> 버전 : 4.21.0
+Selenium.WebDriver.ChromeDriver  버전: 본인크롬 버전에 맞춰서 (설정 -> Chrome 정보에서 확인 가능)
