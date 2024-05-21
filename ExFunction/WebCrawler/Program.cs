@@ -2,9 +2,8 @@
 using OpenQA.Selenium.Chrome;
 using System;
 using System.Collections.Generic;
-using System.IO;
 
-namespace Crwaler
+namespace Crawler
 {
     class Program
     {
@@ -12,37 +11,19 @@ namespace Crwaler
         {
             List<string> transceiversList = new List<string>();
 
-            #region TEST시 경로설정 (Chrome Driver 경로)
-            //string currentPath = AppDomain.CurrentDomain.BaseDirectory + "..\\..\\";
-            //string currentDirectory =Path.GetDirectoryName(currentPath);
-            //Console.WriteLine("현재 실행 파일의 경로: " + currentPath);
-            //Console.WriteLine("현재 ChromeDriver가 있는 디렉토리 경로: " + currentDirectory);
-            #endregion
-
-
             /* 접속할 H101 IP만 바꿔주면 됌 */
-            string ip = ""; 
+            string ip = "";
 
             string mainUrl = $"";
-            string url = SearchTransceiversUrl(mainUrl);
 
-            if (!string.IsNullOrEmpty(url))
+            NavigateAndExtract(mainUrl, transceiversList);
+
+            if (transceiversList.Count > 0)
             {
-                ExecuteChrome(url, transceiversList);
-                Console.WriteLine($"\n{url}");
                 foreach (string transceiver in transceiversList)
                 {
                     Console.WriteLine(transceiver);
                 }
-
-                //foreach (string transceiver in transceiversList)
-                //{
-                //    if (transceiver.Contains("K1"))
-                //    {
-                //        Console.WriteLine(transceiver);
-                //    }
-                //}
-
             }
             else
             {
@@ -50,69 +31,75 @@ namespace Crwaler
             }
         }
 
-        
-        static string SearchTransceiversUrl(string url)
+        static void NavigateAndExtract(string mainUrl, List<string> list)
         {
-            string href = string.Empty;
             using (var chromeDriver = InitializeChromeDriver())
             {
-                chromeDriver.Navigate().GoToUrl(url);
+                chromeDriver.Navigate().GoToUrl(mainUrl);
                 int responseCode = GetResponseCode(chromeDriver);
 
-                if (responseCode == 200)
+                if (responseCode == 200) // 200 : 정상
                 {
+                    // H101 접속 후 Transceivers 요청 URL 파싱
                     IReadOnlyCollection<IWebElement> elements = chromeDriver.FindElements(By.XPath("//a[contains(@href, 'transceivers')]"));
+                    string transceiversUrl = string.Empty;
+
                     foreach (var element in elements)
                     {
-                        href = element.GetAttribute("href");
+                        transceiversUrl = element.GetAttribute("href");
+                        break;
+                    }
+
+                    // Transceivers 주소에 목록 요청
+                    if (!string.IsNullOrEmpty(transceiversUrl))
+                    {
+                        chromeDriver.Navigate().GoToUrl(transceiversUrl);
+                        responseCode = GetResponseCode(chromeDriver);
+
+                        if (responseCode == 200)
+                        {
+                            // <a> 태그 값 파싱
+                            elements = chromeDriver.FindElements(By.TagName("a"));
+                            foreach (var element in elements)
+                            {
+                                list.Add(element.Text);
+                            }
+                        }
+                        else
+                        {
+                            Console.WriteLine("Transceivers 페이지 요청 응답이 200이 아닙니다.");
+                        }
+                    }
+                    else
+                    {
+                        Console.WriteLine("Transceivers URL을 찾을 수 없음");
                     }
                 }
                 else // 404 : 찾을 수 없음, 401 : 권한 거부
                 {
-                    Console.WriteLine("페이지 요청 응답이 200이 아닙니다.");
-                }
-            }
-            return href;
-        }
-
-        static void ExecuteChrome(string url, List<string> list)
-        {
-            using (var chromeDriver = InitializeChromeDriver())
-            {
-                chromeDriver.Navigate().GoToUrl(url);
-                int responseCode = GetResponseCode(chromeDriver);
-
-                if (responseCode == 200)
-                {
-                    var elements = chromeDriver.FindElements(By.TagName("a"));
-                    foreach (var element in elements)
-                    {
-                        list.Add(element.Text);
-                    }
-                }
-                else
-                {
-                    Console.WriteLine("페이지 요청 응답이 200이 아닙니다.");
+                    Console.WriteLine("메인 페이지 요청 응답이 200이 아닙니다.");
                 }
             }
         }
 
         /// <summary>
-        ///  크롬드라이버 사용하여 크롬접속 (본인 Chrome에 맞는 버전 ChromeDriver 필요)
+        /// 크롬드라이버 사용하여 크롬접속 (본인 Chrome에 맞는 버전 ChromeDriver 필요함)
         /// </summary>
-        /// <param></param>
+        /// <param name="currentDirectory"></param>
         /// <returns></returns>
         static ChromeDriver InitializeChromeDriver()
         {
+            ChromeDriverService chromeDriverService = ChromeDriverService.CreateDefaultService();
             ChromeOptions options = new ChromeOptions();
 
-            //// 크롬창 최소화 옵션 
-            //options.AddArgument("--headless");
-            //options.AddArgument("--no-sandbox");
-            //options.AddArgument("--disable-dev-shm-usage");
-            //options.AddArgument("--disable-gpu");
+            // 크롬창 최소화 옵션 
+            options.AddArgument("--headless");
+            options.AddArgument("--no-sandbox");
+            options.AddArgument("--disable-dev-shm-usage");
+            options.AddArgument("--disable-gpu");
 
-            ChromeDriverService chromeDriverService = ChromeDriverService.CreateDefaultService();
+            chromeDriverService.HideCommandPromptWindow = true;
+
             return new ChromeDriver(chromeDriverService, options);
         }
 
