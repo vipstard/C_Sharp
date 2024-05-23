@@ -9,26 +9,45 @@ namespace Crawler
     {
         static void Main(string[] args)
         {
-            List<string> transceiversList = new List<string>();
+            //List<string> transceiversList = new List<string>();
 
-            /* 접속할 H101 IP만 바꿔주면 됌 */
-            string ip = "";
+            ///* 접속할 H101 IP만 바꿔주면 됌 */
+            //string ip = "";
 
-            string mainUrl = $"";
+            //string mainUrl = $"";
 
-            NavigateAndExtract(mainUrl, transceiversList);
+            //NavigateAndExtract(mainUrl, transceiversList);
 
-            if (transceiversList.Count > 0)
-            {
-                foreach (string transceiver in transceiversList)
-                {
-                    Console.WriteLine(transceiver);
-                }
-            }
-            else
-            {
-                Console.WriteLine("Transceivers URL을 찾을 수 없음");
-            }
+            //if (transceiversList.Count > 0)
+            //{
+            //    foreach (string transceiver in transceiversList)
+            //    {
+            //        Console.WriteLine(transceiver);
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Transceivers URL을 찾을 수 없음");
+            //}   //List<string> transceiversList = new List<string>();
+
+            ///* 접속할 H101 IP만 바꿔주면 됌 */
+            //string ip = "";
+
+            //string mainUrl = $"";
+
+            //NavigateAndExtract(mainUrl, transceiversList);
+
+            //if (transceiversList.Count > 0)
+            //{
+            //    foreach (string transceiver in transceiversList)
+            //    {
+            //        Console.WriteLine(transceiver);
+            //    }
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Transceivers URL을 찾을 수 없음");
+            //}
         }
 
         static void NavigateAndExtract(string mainUrl, List<string> list)
